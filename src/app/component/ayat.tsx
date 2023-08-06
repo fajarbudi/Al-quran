@@ -37,7 +37,7 @@ export default function apa(props: any) {
       <div
         key={i}
         id={`${ayat.nomorAyat}`}
-        className=" cursor-pointer my-10 w-80 py-6 px-4 rounded-xl claymorpishm md:w-7/12 2xl:w-8/12 md:m-10">
+        className=" cursor-pointer my-10 mx-4 py-6 px-4 rounded-xl claymorpishm md:w-7/12 2xl:w-8/12 md:m-10">
         <div
           onClick={() => {
             Alert(
@@ -61,7 +61,7 @@ export default function apa(props: any) {
             <div>
               <audio
                 controls
-                className="rounded-xl my-4 bg-blue-400 claymorpishm1">
+                className="rounded-xl my-4 mx-auto bg-blue-400 claymorpishm1">
                 <source src={`${ayat.audio["05"]}`} type="audio/mp3" />
               </audio>
             </div>
