@@ -49,7 +49,7 @@ export default function apa(props: any) {
           <div className="flex flex-row justify-between gap-2">
             <p className="text-[#3da9fc] flex-none">( {ayat.nomorAyat}. )</p>
             <p
-              className={`text-3xl text-end leading-relaxed text-[#094067] ${roboto.className}`}>
+              className={`text-4xl text-end leading-relaxed text-[#094067] ${roboto.className}`}>
               {ayat.teksArab}
             </p>
           </div>
@@ -72,7 +72,7 @@ export default function apa(props: any) {
     ));
     const home = (
       <>
-        <h1 className=" text-3xl md:text-6xl text-center pt-6 px-4 md:px-6  text-[#094067]">
+        <h1 className=" text-4xl md:text-6xl text-center pt-6 px-4 md:px-6  text-[#094067]">
           بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ
         </h1>
         <div className="flex justify-center md:justify-around">
