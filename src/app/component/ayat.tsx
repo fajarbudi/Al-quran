@@ -5,6 +5,9 @@ import Alert from "@/app/component/useAlert";
 import Deskripsi from "@/app/component/deskripsi";
 import { getAyat } from "@/app/component/useFetchData";
 import { useState, useEffect } from "react";
+import { Poppins } from "next/font/google";
+
+const roboto = Poppins({ subsets: ["latin"], weight: "500" });
 
 interface type {
   nomorAyat: number;
@@ -45,7 +48,8 @@ export default function apa(props: any) {
           }}>
           <div className="flex flex-row justify-between gap-2">
             <p className="text-[#3da9fc] flex-none">( {ayat.nomorAyat}. )</p>
-            <p className="text-3xl text-end leading-relaxed text-[#094067]">
+            <p
+              className={`text-4xl text-end leading-relaxed text-[#094067] ${roboto.className}`}>
               {ayat.teksArab}
             </p>
           </div>
@@ -73,7 +77,7 @@ export default function apa(props: any) {
         </h1>
         <div className="flex justify-center md:justify-around">
           <div>{left}</div>
-          <Deskripsi deskripsi={`${surah.deskripsi}`} />
+          <Deskripsi deskripsi={surah.deskripsi} />
         </div>
       </>
     );

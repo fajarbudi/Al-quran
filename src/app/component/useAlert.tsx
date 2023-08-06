@@ -8,6 +8,7 @@ export default function alert(
   const data = { noSurah: nomorSurah, noAyat: nomorAyat, namaSurah: nama };
   const peringatan = () => {
     Swal.fire({
+      width: "400px",
       title: "Apakah Kamu Yakin?",
       text: "Menyimpan Ayat ini",
       icon: "warning",
