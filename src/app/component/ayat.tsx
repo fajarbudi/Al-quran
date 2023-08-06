@@ -7,8 +7,7 @@ import { getAyat } from "@/app/component/useFetchData";
 import { useState, useEffect } from "react";
 import { Poppins } from "next/font/google";
 
-const roboto = Poppins({ subsets: ["latin"], weight: "500" });
-
+const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 interface type {
   nomorAyat: number;
   teksArab: string;
@@ -17,24 +16,25 @@ interface type {
   audio: any;
 }
 
-export default function apa(props: any) {
+export default function Ayat(props: any) {
   const [coba, setCoba] = useState("");
-
   const { data, isLoading } = getAyat(props.id);
   useEffect(() => {
     if (!isLoading) {
       setCoba(data.data.namaLatin);
     }
   });
-  const hasil = () => {
+
+  const ayat = () => {
     if (isLoading)
       return <h1 className="text-center text-2xl mt-4">Tunggu Data.....</h1>;
     const surah = data.data;
     const ayat = surah.ayat;
-    const aduh = data.data.namaLatin;
 
     const left = ayat.map((ayat: type, i: number) => (
       <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
         key={i}
         id={`${ayat.nomorAyat}`}
         className=" cursor-pointer my-10 mx-4 py-6 px-4 rounded-xl claymorpishm md:w-7/12 2xl:w-8/12 md:m-10">
@@ -49,8 +49,8 @@ export default function apa(props: any) {
           <div className="flex flex-row justify-between gap-2">
             <p className="text-[#3da9fc] flex-none">( {ayat.nomorAyat}. )</p>
             <p
-              className={`text-4xl text-end leading-relaxed text-[#094067] ${roboto.className}`}>
-              {ayat.teksArab}
+              className={`text-4xl text-end leading-relaxed text-[#094067] ${poppins.className}`}>
+              {ayat.teksArab.toString()}
             </p>
           </div>
           <div className="md:flex flex-row justify-between">
@@ -70,10 +70,13 @@ export default function apa(props: any) {
         <Tafsir Nomor={parseInt(surah.nomor)} NomorAyat={ayat.nomorAyat} />
       </div>
     ));
+
     const home = (
       <>
         <h1 className=" text-4xl md:text-6xl text-center pt-6 px-4 md:px-6  text-[#094067]">
-          بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ
+          {props.id == 1
+            ? ""
+            : " بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ"}
         </h1>
         <div className="flex justify-center md:justify-around">
           <div>{left}</div>
@@ -89,7 +92,7 @@ export default function apa(props: any) {
     <>
       <main>
         <Navbar judul={coba} position="sticky top-0" />
-        <div>{hasil()}</div>
+        <div>{ayat()}</div>
       </main>
     </>
   );

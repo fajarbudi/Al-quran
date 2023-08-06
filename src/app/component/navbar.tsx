@@ -18,7 +18,11 @@ export default function navbar(props: type) {
       <nav
         className={`bg-[#3da9fc] text-white ${props.position} mx-4 rounded-b-xl z-10`}>
         <div className="flex justify-between px-4 lg:px-10">
-          <div className="w-24 -m-4 pt-2">
+          <div
+            data-aos-delay="1000"
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-center"
+            className="w-24 -m-4 pt-2">
             <img src="/icon3.png"></img>
           </div>
           <div className="py-4">

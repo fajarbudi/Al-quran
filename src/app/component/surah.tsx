@@ -1,23 +1,28 @@
 "use client";
-
 import Link from "next/link";
 import Navbar from "@/app/component/navbar";
 import { getSurah } from "@/app/component/useFetchData";
 
-export default function surat() {
-  const hasil = () => {
+export default function Surah() {
+  const surah = () => {
     const { data, isLoading } = getSurah();
-
     if (isLoading)
       return <h1 className="text-2xl mx-auto">tunggu data.....</h1>;
+
     const surah = data.data;
     return surah.map((surat: any, i: number) => (
       <Link key={i} href={`/surat/${surat.nomor}`}>
         <div
+          data-aos="flip-down"
+          data-aos-anchor-placement="center-bottom"
           style={{ height: "190px" }}
           className=" m-6 rounded-xl text-center claymorpishm px-6 py-4  xl:px-2 xl:w-80 grid content-between relative">
           <div className="flex flex-row justify-between px-6 pt-6">
-            <div className="text-white bg-[#3da9fc] px-8 py-2 rounded-xl claymorpishm1 absolute -top-4">
+            <div
+              data-aos-delay="1200"
+              data-aos="zoom-in"
+              data-aos-anchor-placement="bottom-bottom"
+              className="text-white bg-[#3da9fc] px-8 py-2 rounded-xl claymorpishm1 absolute -top-4">
               <h1>{surat.namaLatin}</h1>
             </div>
             <p>{surat.nomor}.</p>
@@ -47,7 +52,7 @@ export default function surat() {
       <div>
         <Navbar judul="Al-Quran" position="sticky top-0" />
         <div className="flex justify-center xl:justify-start xl:ml-12  flex-wrap mt-4">
-          {hasil()}
+          {surah()}
         </div>
       </div>
     </>

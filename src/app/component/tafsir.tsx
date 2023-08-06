@@ -22,6 +22,9 @@ export default function tafsir(props: type) {
       <div className=" border-t-2 mt-4 pt-4 indent-4 relative">
         <div className={`${isHidden} pb-4 mb-4  border-b-2`}>{hasil()}</div>
         <button
+          data-aos-delay="500"
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
           className="py-2 px-6 absolute claymorpishm1 text-white rounded-xl bg-[#3da9fc] right-2/4"
           onClick={() => {
             isHidden == "hidden" ? setIsHidden("block") : setIsHidden("hidden");

@@ -1,4 +1,4 @@
-import Surat from "@/app/component/surat";
+import Surah from "@/app/component/surah";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <Surat />
+      <Surah />
     </main>
   );
 }
