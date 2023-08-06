@@ -50,7 +50,7 @@ export default function Ayat(props: any) {
             <p className="text-[#3da9fc] flex-none">( {ayat.nomorAyat}. )</p>
             <p
               className={`text-4xl text-end leading-relaxed text-[#094067] ${poppins.className}`}>
-              {ayat.teksArab.toString()}
+              {`${ayat.teksArab}`}
             </p>
           </div>
           <div className="md:flex flex-row justify-between">
