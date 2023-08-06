@@ -15,7 +15,7 @@ export default function surat() {
       <Link key={i} href={`/surat/${surat.nomor}`}>
         <div
           style={{ height: "190px" }}
-          className=" m-6 rounded-xl text-center claymorpishm px-8 py-4  xl:px-2 xl:w-80 grid content-between relative">
+          className=" m-6 rounded-xl text-center claymorpishm px-6 py-4  xl:px-2 xl:w-80 grid content-between relative">
           <div className="flex flex-row justify-between px-6 pt-6">
             <div className="text-white bg-[#3da9fc] px-8 py-2 rounded-xl claymorpishm1 absolute -top-4">
               <h1>{surat.namaLatin}</h1>
