@@ -44,12 +44,12 @@ export default function surat() {
 
   return (
     <>
-      <main>
+      <div className="w-screen">
         <Navbar judul="Al-Quran" position="sticky top-0" />
         <div className="flex justify-center xl:justify-start xl:ml-12  flex-wrap mt-4">
           {hasil()}
         </div>
-      </main>
+      </div>
     </>
   );
 }
