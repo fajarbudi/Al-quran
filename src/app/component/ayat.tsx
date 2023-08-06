@@ -49,7 +49,7 @@ export default function apa(props: any) {
           <div className="flex flex-row justify-between gap-2">
             <p className="text-[#3da9fc] flex-none">( {ayat.nomorAyat}. )</p>
             <p
-              className={` md:text-4xl text-end leading-relaxed text-[#094067] ${roboto.className}`}>
+              className={`text-3xl text-end leading-relaxed text-[#094067] ${roboto.className}`}>
               {ayat.teksArab}
             </p>
           </div>
