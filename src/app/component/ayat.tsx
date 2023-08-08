@@ -5,9 +5,9 @@ import Alert from "@/app/component/useAlert";
 import Deskripsi from "@/app/component/deskripsi";
 import { getAyat } from "@/app/component/useFetchData";
 import { useState, useEffect } from "react";
-import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 
-const poppins = Poppins({ subsets: ["latin"], weight: "500" });
+const myFont = localFont({ src: "../../font/LPMQ.ttf" });
 interface type {
   nomorAyat: number;
   teksArab: string;
@@ -49,7 +49,7 @@ export default function Ayat(props: any) {
           <div className="flex flex-row justify-between gap-2">
             <p className="text-[#3da9fc] flex-none">( {ayat.nomorAyat}. )</p>
             <p
-              className={`text-4xl text-end leading-relaxed text-[#094067] ${poppins.className}`}>
+              className={`text-4xl text-end leading-loose text-[#094067] ${myFont.className}`}>
               {`${ayat.teksArab}`}
             </p>
           </div>
@@ -73,7 +73,8 @@ export default function Ayat(props: any) {
 
     const home = (
       <>
-        <h1 className=" text-4xl md:text-6xl text-center pt-6 px-4 md:px-6  text-[#094067]">
+        <h1
+          className={`text-4xl md:text-6xl text-center pt-6 px-4 md:px-6  text-[#094067] ${myFont.className}`}>
           {props.id == 1
             ? ""
             : " بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ"}
