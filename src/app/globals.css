@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    scroll-behavior:smooth
-}
-
 .claymorpishm{
     transition: all .3s linear;
     box-shadow: inset 4.27px 4.22px 8.49px -1.06px rgba(0, 0, 0, 0.15),

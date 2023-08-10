@@ -3,6 +3,7 @@ import Tafsir from "@/app/component/tafsir";
 import Navbar from "@/app/component/navbar";
 import Alert from "@/app/component/useAlert";
 import Deskripsi from "@/app/component/deskripsi";
+import Selanjutnya from "@/app/component/selanjutnya";
 import { getAyat } from "@/app/component/useFetchData";
 import { useState, useEffect } from "react";
 import localFont from "next/font/local";
@@ -30,6 +31,8 @@ export default function Ayat(props: any) {
       return <h1 className="text-center text-2xl mt-4">Tunggu Data.....</h1>;
     const surah = data.data;
     const ayat = surah.ayat;
+    const selanjutnya = surah.suratSelanjutnya;
+    const sebelumnya = surah.suratSebelumnya;
 
     const left = ayat.map((ayat: type, i: number) => (
       <div
@@ -80,7 +83,19 @@ export default function Ayat(props: any) {
             : " بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ"}
         </h1>
         <div className="flex justify-center md:justify-around">
-          <div>{left}</div>
+          <div>
+            <div>{left}</div>
+            <div className="md:w-7/12 2xl:w-8/12 my-10">
+              <Selanjutnya
+                nextSurah={selanjutnya.namaLatin}
+                nextAyat={selanjutnya.jumlahAyat}
+                nextNomor={selanjutnya.nomor}
+                prevSurah={sebelumnya.namaLatin}
+                prevAyat={sebelumnya.jumlahAyat}
+                prevNomor={sebelumnya.nomor}
+              />
+            </div>
+          </div>
           <Deskripsi deskripsi={surah.deskripsi} />
         </div>
       </>
