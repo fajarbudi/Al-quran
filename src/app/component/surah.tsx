@@ -18,17 +18,17 @@ export default function Surah() {
           style={{ height: "190px" }}
           className=" m-6 rounded-xl text-center claymorpishm px-6 py-4  xl:px-2 xl:w-80 grid content-between relative">
           <div className="flex flex-row justify-between px-6 pt-6">
-            <div
-              data-aos-delay="1200"
+            <h1
+              data-aos-delay="1000"
               data-aos="zoom-in"
               data-aos-anchor-placement="bottom-bottom"
               className="text-white bg-[#3da9fc] px-8 py-2 rounded-xl claymorpishm1 absolute -top-4">
-              <h1>{surat.namaLatin}</h1>
-            </div>
+              {surat.namaLatin}
+            </h1>
             <p>{surat.nomor}.</p>
-            <div className="grid gap-2">
-              <p className="border-b-2">{surat.arti}</p>
-              <div className="flex flex-row justify-center gap-2 pb-2">
+            <div>
+              <p className="border-b-2 pb-2">{surat.arti}</p>
+              <div className="flex flex-row justify-center gap-2 pb-2 mt-2">
                 <p>{surat.tempatTurun} -</p>
                 <p>{surat.jumlahAyat} Ayat</p>
               </div>
