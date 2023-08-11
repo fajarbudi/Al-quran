@@ -22,8 +22,13 @@ export default function navbar(props: type) {
             data-aos-delay="1000"
             data-aos="fade-down"
             data-aos-anchor-placement="top-center"
-            className="w-24 -m-4 pt-2">
-            <img src="/icon3.png"></img>
+            className="-m-4 pt-2">
+            <img
+              src="/icon3.webp"
+              alt="icon"
+              width={"100px"}
+              height={"100px"}
+            />
           </div>
           <div className="py-4">
             <h1 className="text-xl">{props.judul}</h1>
