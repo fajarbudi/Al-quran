@@ -21,7 +21,7 @@ export default function deskripsi(props: type) {
           className={`${
             isHidden ? "-mr-coba" : ""
           } transition-all duration-500 md:mr-px`}>
-          <div className=" w-80 p-4 rounded-xl my-2 mx-8 md:my-12 md:w-64 xl:w-96 2xl:h-auto bg-white shadow-claymorpishm1">
+          <div className=" w-80 p-4 rounded-xl -my-20 mx-8 md:my-12 md:w-64 xl:w-96 2xl:h-auto bg-white shadow-claymorpishm1">
             <div className="text-center text-white text-xl bg-[#3da9fc] absolute -top-6 md:top-6 py-2 px-10 rounded-xl shadow-claymorpishm2">
               Deskripsi
             </div>
