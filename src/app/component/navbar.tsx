@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface type {
   judul: string;
@@ -23,12 +24,7 @@ export default function navbar(props: type) {
             data-aos="fade-down"
             data-aos-anchor-placement="top-center"
             className="-m-4 pt-2">
-            <img
-              src="/icon3.webp"
-              alt="icon"
-              width={"100px"}
-              height={"100px"}
-            />
+            <Image src="/icon3.webp" alt="icon" width={100} height={100} />
           </div>
           <div className="py-4">
             <h1 className="text-xl">{props.judul}</h1>

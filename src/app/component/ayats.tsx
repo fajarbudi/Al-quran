@@ -15,7 +15,7 @@ interface type {
 export default function ayats(props: any) {
   const surah = props.array;
   const ayat = surah.ayat;
-  console.log(ayat);
+
   return ayat.map((ayat: type, i: number) => (
     <div
       data-aos="fade-up"

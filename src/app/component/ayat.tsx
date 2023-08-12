@@ -1,10 +1,9 @@
 "use client";
 import Navbar from "@/app/component/navbar";
 import Deskripsi from "@/app/component/deskripsi";
-import Selanjutnya from "@/app/component/selanjutnya";
+import NextPrevSurah from "@/app/component/NextPrevSurah";
 import Ayats from "@/app/component/ayats";
 import { getAyat } from "@/app/component/useFetchData";
-import { useState, useEffect } from "react";
 import localFont from "next/font/local";
 
 interface type {
@@ -12,13 +11,7 @@ interface type {
 }
 const myFont = localFont({ src: "../../font/LPMQ.ttf" });
 export default function Ayat(props: type) {
-  const [coba, setCoba] = useState("");
   const { data, isLoading } = getAyat(props.id);
-  useEffect(() => {
-    if (!isLoading) {
-      setCoba(data.data.namaLatin);
-    }
-  });
 
   if (isLoading)
     return <h1 className="text-center text-2xl mt-4">Tunggu Data.....</h1>;
@@ -29,7 +22,7 @@ export default function Ayat(props: type) {
   return (
     <>
       <div>
-        <Navbar judul={coba} position="sticky top-0" />
+        <Navbar judul={surah.namaLatin} position="sticky top-0" />
         <h1
           className={`text-4xl md:text-6xl text-center pt-6 px-4 md:px-6  text-[#094067] ${myFont.className}`}>
           {props.id == 1
@@ -39,9 +32,9 @@ export default function Ayat(props: type) {
 
         <div className="flex justify-center md:justify-around">
           <div>
-            <Ayats array={surah} />
+            <Ayats array={surah} id={props.id} />
             <div className="md:w-7/12 2xl:w-8/12 my-10">
-              <Selanjutnya
+              <NextPrevSurah
                 nextSurah={selanjutnya.namaLatin}
                 nextAyat={selanjutnya.jumlahAyat}
                 nextNomor={selanjutnya.nomor}

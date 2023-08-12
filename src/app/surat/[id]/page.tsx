@@ -2,7 +2,7 @@ import Ayat from "@/app/component/ayat";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Al-Quran",
+  title: "Al-Quran-Baca",
   description: "Al-Quran Indonesia",
 };
 
