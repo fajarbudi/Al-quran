@@ -15,14 +15,13 @@ export default function Surah() {
         <div
           data-aos="flip-down"
           data-aos-anchor-placement="center-bottom"
-          style={{ height: "190px" }}
-          className=" m-6 rounded-xl text-center claymorpishm px-6 py-4  xl:px-2 xl:w-80 grid content-between relative">
+          className=" m-6 h-190 rounded-xl text-center px-6 py-4 xl:px-2 xl:w-80 grid content-between relative shadow-claymorpishm1 hover:shadow-claymorpishm3 ">
           <div className="flex flex-row justify-between px-6 pt-6">
             <h1
               data-aos-delay="1000"
               data-aos="zoom-in"
               data-aos-anchor-placement="bottom-bottom"
-              className="text-white bg-[#3da9fc] px-8 py-2 rounded-xl claymorpishm1 absolute -top-4">
+              className="text-white bg-[#3da9fc] px-8 py-2 rounded-xl absolute -top-4 shadow-claymorpishm2">
               {surat.namaLatin}
             </h1>
             <p>{surat.nomor}.</p>
@@ -38,7 +37,9 @@ export default function Surah() {
             </p>
           </div>
           <div className=" border-[#3da9fc] border-t-2 pt-2 mx-auto">
-            <audio controls className="rounded-xl bg-[#3da9fc] claymorpishm1">
+            <audio
+              controls
+              className="rounded-xl bg-[#3da9fc] shadow-claymorpishm2">
               <source src={`${surat.audioFull["05"]}`} />
             </audio>
           </div>

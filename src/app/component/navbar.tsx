@@ -17,7 +17,7 @@ export default function navbar(props: type) {
   return (
     <>
       <nav
-        className={`bg-[#3da9fc] text-white ${props.position} mx-4 rounded-b-xl z-10`}>
+        className={`bg-[#3da9fc] text-white ${props.position} mx-4 rounded-b-xl z-10 shadow-3d`}>
         <div className="flex justify-between px-4 lg:px-10">
           <div
             data-aos-delay="1000"

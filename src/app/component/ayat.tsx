@@ -44,7 +44,7 @@ export default function Ayat(props: type) {
               />
             </div>
           </div>
-          <Deskripsi deskripsi={surah.deskripsi} />
+          <Deskripsi deskripsi={surah.deskripsi} surah={surah.namaLatin} />
         </div>
       </div>
     </>
