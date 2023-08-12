@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       margin: {
-        coba: "413px",
+        coba: "350px",
       },
     },
   },
