@@ -11,7 +11,7 @@ module.exports = {
         coba: "350px",
       },
       height: {
-        190: "190px",
+        190: "200px",
       },
       boxShadow: {
         claymorpishm1:
