@@ -18,7 +18,7 @@ export default function selanjutnya(props: type) {
         }`}>
         <Link href={`/surat/${props.prevNomor}`}>
           <div
-            className={`bg-[#3da9fc] px-4 py-2 rounded-xl claymorpishm1 ${
+            className={`bg-[#3da9fc] px-4 py-2 rounded-xl shadow-claymorpishm2 ${
               !props.prevSurah ? "hidden" : "block"
             }`}>
             <p>Sebelumnya</p>
@@ -30,7 +30,7 @@ export default function selanjutnya(props: type) {
         </Link>
         <Link href={`/surat/${props.nextNomor}`}>
           <div
-            className={`bg-[#3da9fc] px-4 py-2 rounded-xl claymorpishm1 ${
+            className={`bg-[#3da9fc] px-4 py-2 rounded-xl shadow-claymorpishm2 ${
               !props.nextSurah ? "hidden" : "block"
             }`}>
             <p className="text-center">Selanjutnya</p>

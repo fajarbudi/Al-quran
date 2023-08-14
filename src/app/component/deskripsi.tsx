@@ -5,7 +5,7 @@ interface type {
 }
 export default function deskripsi(props: type) {
   const [isHidden, setIsHidden] = useState(true);
-  console.log(isHidden);
+  
   return (
     <>
       <div className="fixed right-0">
@@ -13,7 +13,7 @@ export default function deskripsi(props: type) {
           onClick={() => {
             isHidden ? setIsHidden(false) : setIsHidden(true);
           }}
-          style={{ writingMode: "sideways-lr" }}
+          style={{ writingMode: "vertical-rl" }}
           className="bg-[#3da9fc] text-white rounded-md py-4 px-px absolute top-1/4 left-3 md:hidden shadow-claymorpishm2">
           {isHidden ? "Deskripsi" : "Close"}
         </button>

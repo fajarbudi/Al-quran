@@ -1,6 +1,8 @@
 import Tafsir from "@/app/component/tafsir";
 import Alert from "@/app/component/useAlert";
 import localFont from "next/font/local";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const myFont = localFont({ src: "../../font/LPMQ.ttf" });
 
@@ -15,7 +17,17 @@ interface type {
 export default function ayats(props: any) {
   const surah = props.array;
   const ayat = surah.ayat;
+  const [url, setUrl]: any = useState("");
+  const router = useRouter();
 
+  useEffect(() => {
+    const Url = JSON.parse(localStorage.getItem("url") || "[]");
+    setUrl(Url);
+  }, []);
+
+  useEffect(() => {
+    router.push(`/surat/${url.noSurah}#${url.noAyat}`);
+  });
   return ayat.map((ayat: type, i: number) => (
     <div
       data-aos="fade-up"
@@ -46,7 +58,7 @@ export default function ayats(props: any) {
           <div>
             <audio
               controls
-              className="rounded-xl my-4 mx-auto bg-blue-400 claymorpishm1">
+              className="rounded-xl my-4 mx-auto bg-blue-400 shadow-claymorpishm2">
               <source src={`${ayat.audio["05"]}`} type="audio/mp3" />
             </audio>
           </div>
