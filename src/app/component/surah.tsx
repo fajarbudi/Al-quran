@@ -40,7 +40,7 @@ export default function Surah() {
             <audio
               controls
               className="rounded-xl bg-[#3da9fc] shadow-claymorpishm2 h-10">
-              <source src={`${surat.audioFull["05"]}`} />
+              <source src={`${surat.audioFull["05"]}`} type="audio/mp3" />
             </audio>
           </div>
         </div>

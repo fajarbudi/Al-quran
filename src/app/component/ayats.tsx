@@ -19,13 +19,12 @@ export default function ayats(props: any) {
   const ayat = surah.ayat;
   const [url, setUrl]: any = useState("");
   const router = useRouter();
+  
   useEffect(() => {
-    const Url = JSON.parse(localStorage.getItem("url") || "[]");
-    setUrl(Url);
-  }, []);
-
-  useEffect(() => {
-    if (url.noAyat) {
+    if (!url.noAyat) {
+      const Url = JSON.parse(localStorage.getItem("url") || "[]");
+      setUrl(Url);
+    } else {
       Swal.fire({
         title: "Apakah Kamu Akan",
         text: `Melanjutkan ${url.namaSurah} - ${url.noAyat}`,
