@@ -30,12 +30,12 @@ export default function navbar(props: type) {
             <h1 className="text-xl">{props.judul}</h1>
           </div>
           <div>
-            <Link href={`/surat/${url.noSurah}`}>
+            <Link href={`${!url.namaSurah ? `/` : `/surat/${url.noSurah}`}`}>
               <div className="text-center pt-2">
-                <p>{!url.namaSurah ? "Belum" : "Lanjutkan"}</p>
+                <p>{!url.namaSurah ? "Tekan Ayat" : "Lanjutkan"}</p>
                 <p>
                   {!url.namaSurah
-                    ? "Menyimpan Ayat"
+                    ? "Untuk Menyimpan"
                     : `${url.namaSurah} - ${url.noAyat}`}
                 </p>
               </div>

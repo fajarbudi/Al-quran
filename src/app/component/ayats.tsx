@@ -61,7 +61,7 @@ export default function ayats(props: any) {
         <div className="flex flex-row justify-between gap-2">
           <p className="text-[#3da9fc] flex-none">( {ayat.nomorAyat}. )</p>
           <p
-            className={`text-4xl text-end leading-loose text-[#094067] ${myFont.className}`}>
+            className={`text-4xl text-end leading-loose antialiased text-[#094067] ${myFont.className}`}>
             {`${ayat.teksArab}`}
           </p>
         </div>
