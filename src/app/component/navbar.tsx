@@ -29,18 +29,19 @@ export default function navbar(props: type) {
           <div className="py-4">
             <h1 className="text-xl">{props.judul}</h1>
           </div>
-          <div>
-            <Link href={`${!url.namaSurah ? `/` : `/surat/${url.noSurah}`}`}>
-              <div className="text-center pt-2">
-                <p>{!url.namaSurah ? "Tekan Ayat" : "Lanjutkan"}</p>
-                <p>
-                  {!url.namaSurah
-                    ? "Untuk Menyimpan"
-                    : `${url.namaSurah} - ${url.noAyat}`}
-                </p>
-              </div>
-            </Link>
-          </div>
+
+          <Link
+            className="pt-2 "
+            href={`${!url.namaSurah ? `/` : `/surat/${url.noSurah}`}`}>
+            <div className="text-center px-2 py-px rounded-md active:bg-sky-600  shadow-3d ">
+              <p>{!url.namaSurah ? "Tekan Ayat" : "Lanjutkan"}</p>
+              <p>
+                {!url.namaSurah
+                  ? "Untuk Menyimpan"
+                  : `${url.namaSurah} - ${url.noAyat}`}
+              </p>
+            </div>
+          </Link>
         </div>
       </nav>
     </>
