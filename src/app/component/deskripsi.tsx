@@ -31,7 +31,7 @@ export default function deskripsi(props: type) {
               <h1 className="text-center text-2xl text-[#094067] mb-2 pb-2 border-b-2">
                 {props.surah}
               </h1>
-              <p>{props.deskripsi}</p>
+              <div dangerouslySetInnerHTML={{ __html: `${props.deskripsi}` }} />
             </div>
           </div>
         </div>
