@@ -19,13 +19,15 @@ export default function navbar(props: type) {
       <nav
         className={`bg-[#3da9fc] text-white ${props.position} mx-4 rounded-b-xl z-10 shadow-3d`}>
         <div className="flex justify-between px-4 lg:px-10">
-          <div
-            data-aos-delay="1000"
-            data-aos="fade-down"
-            data-aos-anchor-placement="top-center"
-            className="-m-4 pt-2">
-            <Image src="/icon3.webp" alt="icon" width={100} height={100} />
-          </div>
+          <a href={"/"}>
+            <div
+              data-aos-delay="1000"
+              data-aos="fade-down"
+              data-aos-anchor-placement="top-center"
+              className="-m-4 pt-2">
+              <Image src="/icon3.webp" alt="icon" width={100} height={100} />
+            </div>
+          </a>
           <div className="py-4">
             <h1 className="text-xl">{props.judul}</h1>
           </div>
