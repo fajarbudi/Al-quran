@@ -1,9 +1,8 @@
 import Tafsir from "@/app/component/tafsir";
-import Alert from "@/app/component/useAlert";
+import { simpan, lanjutkan } from "@/app/component/useAlert";
 import localFont from "next/font/local";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Swal from "sweetalert2";
 
 const myFont = localFont({ src: "../../font/LPMQ.ttf" });
 interface type {
@@ -19,26 +18,13 @@ export default function ayats(props: any) {
   const ayat = surah.ayat;
   const [url, setUrl]: any = useState("");
   const router = useRouter();
-  
+
   useEffect(() => {
     if (!url.noAyat) {
       const Url = JSON.parse(localStorage.getItem("url") || "[]");
       setUrl(Url);
     } else {
-      Swal.fire({
-        title: "Apakah Kamu Akan",
-        text: `Melanjutkan ${url.namaSurah} - ${url.noAyat}`,
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#3da9fc",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, Lanjutkan",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          router.push(`/surat/${url.noSurah}#${url.noAyat}`);
-          Swal.fire("Berhasil!", "Surah ini Akan Dilanjutkan.", "success");
-        }
-      });
+      lanjutkan(url, router);
     }
   });
 
@@ -52,7 +38,7 @@ export default function ayats(props: any) {
       className=" cursor-pointer my-10 mx-4 py-6 px-4 rounded-xl md:w-7/12 2xl:w-8/12 md:m-10 shadow-claymorpishm1 hover:shadow-claymorpishm3">
       <div
         onClick={() => {
-          Alert(
+          simpan(
             props.id.toString(),
             ayat.nomorAyat.toString(),
             surah.namaLatin

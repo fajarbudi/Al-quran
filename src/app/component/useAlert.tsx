@@ -1,27 +1,65 @@
 import Swal from "sweetalert2";
 
-export default function alert(
-  nomorSurah: string,
-  nomorAyat: string,
-  nama: string
-) {
+export function simpan(nomorSurah: string, nomorAyat: string, nama: string) {
   const data = { noSurah: nomorSurah, noAyat: nomorAyat, namaSurah: nama };
-  const peringatan = () => {
-    Swal.fire({
-      title: "Apakah Kamu Akan",
-      text: "Menyimpan Ayat ini ?",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#3da9fc",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, Simpan",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        localStorage.setItem("url", JSON.stringify(data));
-        Swal.fire("Tersimpan!", "Ayat ini berhasil disimpan.", "success");
-      }
-    });
-  };
 
-  return peringatan();
+  Swal.fire({
+    title: "Apakah Kamu Akan",
+    text: `Menyimpan ${nama} - ${nomorAyat}`,
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3da9fc",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, Simpan",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      localStorage.setItem("url", JSON.stringify(data));
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        },
+      });
+      Toast.fire({
+        icon: "success",
+        title: `Menyimpan ${nama} - ${nomorAyat}`,
+      });
+    }
+  });
+}
+
+export function lanjutkan(url: any, router: any) {
+  Swal.fire({
+    title: "Apakah Kamu Akan",
+    text: `Melanjutkan ${url.namaSurah} - ${url.noAyat}`,
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3da9fc",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, Lanjutkan",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      router.push(`/surat/${url.noSurah}#${url.noAyat}`);
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        },
+      });
+      Toast.fire({
+        icon: "success",
+        title: "Silahkan Melanjutkan Kembali",
+      });
+    }
+  });
 }
