@@ -30,6 +30,7 @@ export default function ayats(props: any) {
 
   return ayat.map((ayat: type, i: number) => (
     <div
+      id={`${ayat.nomorAyat}`}
       data-aos="fade-up"
       data-aos-delay="500"
       data-aos-anchor-placement="top-bottom"
