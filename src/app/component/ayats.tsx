@@ -34,7 +34,6 @@ export default function ayats(props: any) {
       data-aos-delay="500"
       data-aos-anchor-placement="top-bottom"
       key={i}
-      id={`${ayat.nomorAyat}`}
       className=" cursor-pointer my-10 mx-4 py-6 px-4 rounded-xl md:w-7/12 2xl:w-8/12 md:m-10 shadow-claymorpishm1 hover:shadow-claymorpishm3">
       <div
         onClick={() => {

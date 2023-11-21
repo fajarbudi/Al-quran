@@ -14,3 +14,7 @@ export function getAyat(noAyat: number) {
 export function getTafsir(nomorAyat: number) {
   return useSWR(`https://equran.id/api/v2/tafsir/${nomorAyat}`, fetcher);
 }
+
+export function getAsmaulHusna() {
+  return useSWR("https://asmaul-husna-api.vercel.app/api/all", fetcher);
+}
