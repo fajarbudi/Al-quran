@@ -4,11 +4,7 @@ import { getAsmaulHusna } from "@/app/component/useFetchData";
 export default function asmaulHusna() {
   const { data, isLoading } = getAsmaulHusna();
   if (isLoading)
-    return (
-      <h1 style={{ marginLeft: "45%" }} className="text-2xl mt-4">
-        Loading...
-      </h1>
-    );
+    return <h1 className="text-2xl mt-4 lg:text-center">Loading...</h1>;
   const datas = data.data;
   console.log(datas);
 
