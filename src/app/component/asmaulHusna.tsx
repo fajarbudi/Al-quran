@@ -14,15 +14,20 @@ export default function asmaulHusna() {
   }
   const coba = (id: any) => {
     const text = document.getElementById(id);
+    const textFull = document.getElementById(`full${id}`);
+    const textPreview = document.getElementById(`preview${id}`);
 
-    text?.classList.toggle("h-24");
-    text?.classList.toggle("h-9");
+    text?.classList.toggle("h-20");
+    text?.classList.toggle("h-10");
+
+    textFull?.classList.toggle("hidden");
+    textPreview?.classList.toggle("hidden");
   };
   return Data.map((asmaulHusna: type, i: number) => (
     <div
       key={i}
-      className="shadow-claymorpishm1 m-4 p-6 rounded-xl w-64 xl:w-56 h-36 relative">
-      <div className="flex flex-row border-b-2 pb-3.5">
+      className="shadow-claymorpishm1 m-4 p-6 rounded-xl w-64 xl:w-56 h-32 relative">
+      <div className="flex flex-row pb-3.5">
         <h1>{i + 1}.</h1>
         <div style={{ marginLeft: "20%" }}>
           <h1 className="text-center">{asmaulHusna.arab}</h1>
@@ -32,8 +37,15 @@ export default function asmaulHusna() {
       <div
         id={`${i}`}
         onClick={() => coba(i)}
-        className=" h-9 p-2 shadow-claymorpishm2 rounded-xl bg-[#3da9fc] text-white absolute left-0 bottom-0 w-64 xl:w-56 cursor-pointer overflow-hidden">
-        <p className="text-center">{asmaulHusna.arti}</p>
+        className=" h-10 p-2 shadow-claymorpishm2 rounded-b-xl bg-[#3da9fc] text-white absolute left-0 bottom-0 w-64 xl:w-56 cursor-pointer overflow-hidden">
+        <p id={`preview${i}`} className="text-center ">
+          {asmaulHusna.arti.length > 18
+            ? `${asmaulHusna.arti.substring(0, 18)}...`
+            : asmaulHusna.arti}
+        </p>
+        <p id={`full${i}`} className="text-center hidden">
+          {asmaulHusna.arti}
+        </p>
       </div>
     </div>
   ));
