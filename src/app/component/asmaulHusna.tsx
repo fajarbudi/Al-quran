@@ -5,8 +5,7 @@ export default function asmaulHusna() {
   const { data, isLoading } = getAsmaulHusna();
   if (isLoading)
     return <h1 className="text-2xl mt-4 lg:text-center">Loading...</h1>;
-  const datas = data.data;
-  console.log(datas);
+  const Data = data.data;
 
   interface type {
     latin: string;
@@ -19,7 +18,7 @@ export default function asmaulHusna() {
     text?.classList.toggle("h-24");
     text?.classList.toggle("h-9");
   };
-  return datas.map((asmaulHusna: type, i: number) => (
+  return Data.map((asmaulHusna: type, i: number) => (
     <div
       key={i}
       className="shadow-claymorpishm1 m-4 p-6 rounded-xl w-64 xl:w-56 h-36 relative">
