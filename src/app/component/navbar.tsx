@@ -63,7 +63,7 @@ export default function navbar(props: type) {
             </div>
           </div>
 
-          <div className="py-4 lg:-ms-72">
+          <div className="py-4 lg:-ms-72 absolute left-1/4 lg:static">
             <h1 className="text-xl">{props.judul}</h1>
           </div>
 
