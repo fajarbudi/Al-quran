@@ -27,12 +27,10 @@ export default function asmaulHusna() {
     <div
       key={i}
       className="shadow-claymorpishm1 m-2 p-2 rounded-xl w-44 xl:w-56 xl:m-4 h-32 relative">
-      <div className="flex flex-row pb-3.5">
-        <h1>{i + 1}.</h1>
-        <div style={{ marginLeft: "20%" }}>
-          <h1 className="text-center">{asmaulHusna.arab}</h1>
-          <h1>{asmaulHusna.latin}</h1>
-        </div>
+      <div className="pt-2.5">
+        <h1 className="absolute">{i + 1}.</h1>
+        <h1 className="text-center">{asmaulHusna.arab}</h1>
+        <h1 className="text-center">{asmaulHusna.latin}</h1>
       </div>
       <div
         id={`${i}`}
