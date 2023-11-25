@@ -34,9 +34,9 @@ export default function navbar(props: type) {
               </svg>
             </button>
             <div
-              className={
-                " items-center lg:flex" + (navbarOpen ? " flex" : " hidden")
-              }>
+              className={`items-center lg:flex ${
+                navbarOpen ? "" : " hidden"
+              } transition-all duration-500`}>
               <ul className="flex flex-col lg:flex-row list-none">
                 <li className="nav-item">
                   <Link href="/">
@@ -63,7 +63,11 @@ export default function navbar(props: type) {
             </div>
           </div>
 
-          <div className="py-4 lg:-ms-72 absolute left-1/4 lg:static">
+          <div
+            data-aos="fade-down"
+            data-aos-delay="1500"
+            data-aos-anchor-placement="center-bottom"
+            className="py-4 lg:-ms-72 absolute left-1/4 lg:static">
             <h1 className="text-xl">{props.judul}</h1>
           </div>
 

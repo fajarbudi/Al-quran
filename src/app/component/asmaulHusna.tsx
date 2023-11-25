@@ -29,13 +29,13 @@ export default function asmaulHusna() {
       className="shadow-claymorpishm1 m-2 p-2 rounded-xl w-44 xl:w-56 xl:m-4 h-32 relative">
       <div className="pt-2.5">
         <h1 className="absolute">{i + 1}.</h1>
-        <h1 className="text-center">{asmaulHusna.arab}</h1>
+        <h1 className="text-center text-[#094067]">{asmaulHusna.arab}</h1>
         <h1 className="text-center">{asmaulHusna.latin}</h1>
       </div>
       <div
         id={`${i}`}
         onClick={() => coba(i)}
-        className=" h-10 p-2 shadow-claymorpishm2 rounded-b-xl bg-[#3da9fc] text-white absolute left-0 bottom-0 w-44 xl:w-56 cursor-pointer overflow-hidden">
+        className=" h-10 p-2 shadow-claymorpishm2 rounded-b-xl bg-[#3da9fc] text-white absolute left-0 bottom-0 w-44 xl:w-56 cursor-pointer transition-all ease-out duration-500">
         <p id={`preview${i}`} className="text-center ">
           {asmaulHusna.arti.length > 16
             ? `${asmaulHusna.arti.substring(0, 16)}...`
