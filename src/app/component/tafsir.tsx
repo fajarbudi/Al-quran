@@ -16,7 +16,7 @@ export default function tafsir(props: type) {
     const tafsir = data.data.tafsir[props.NomorAyat - 1];
     return <h1>{tafsir.teks}</h1>;
   };
-console.log(isHidden);
+
   return (
     <>
       <div className=" border-t-2 mt-4 pt-4 indent-4 relative">

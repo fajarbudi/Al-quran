@@ -1,14 +1,14 @@
 export default function dzikir() {
   const dzikirs = [
     {
-      arab: "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْه",
+      arab: "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ . الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ . وَأَتُوبُ إِلَيْه",
       latin:
         "Astaghfirullaahal ‘adziim alladzii laaailaaha illaa huwal hayyulqoyyuum wa atuubu ilaih.",
       arti: "Aku memohon ampun kepada Allah yang maha agung , tiada Tuhan yang berhak disembah kecuali Allah, dzat yang maha hidup kekal abadi dan terus menerus mengurus makhluknya tiada henti. Dan aku bertaubat kepada-Nya.",
       dibaca: "3x",
     },
     {
-      arab: "اَللَّهُمَّ أَنْتَ السَّلاَمُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ يَا ذَاالْـجَلَالِ وَاْلإِكْرَام",
+      arab: "اَللَّهُمَّ أَنْتَ السَّلاَمُ . وَمِنْكَ السَّلاَمُ . وَإِلَيْكَ يَعُوْدُ السَّلاَمُ . فَحَيِّنَا رَبَّنَا بِالسَّلاَمِ . وَأَدْخِلْنَا الْجَنَّةَ دَارَ السَّلاَمِ تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ يَا ذَالْجَلاَلِ وَالْأِ كْرَامِ",
       latin:
         "Allaahumma antas salaam waminkas salaam wa ilaika ya’uudus salaam fahayyinaa robbanaa bis salaam wa adkhilnal jannata daaros salaam tabaarokta robbanaa wa ta’aalaita yaa dzal jalaali wal ikroom",
       arti: "Ya Allah, engkaulah Dzat yang memberi keselamatan (kesejahteraan), hanya darimu lah keselamatan (kesejahteraan) dan kepadamua lah segala keselamatan (kesejahteraan) itu kembali. Maka hidupkanlah kami Ya Allah dengan selamat (sejahtera), masukkan kami ke dalam surga rumah keselamatan (kesejahteraan), Engkaulah Dzat yang berkah wahai Tuhan kami dan maha luhur Engkau, Ya Tuhan kami yang Dzat yang memiliki keagungan dan kemuliaan.",
@@ -28,7 +28,7 @@ export default function dzikir() {
       dibaca: "1x",
     },
     {
-      arab: "لَاإِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِيْ وَيُمِيْتُ وَهُوَ عَلَى كُلِّ شَيْئٍ قَدِيْرٌ",
+      arab: "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لَا شَرِيْكَ لَهُ . لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِيْ . وَيُمِيْتُ وَهُوَ عَلَى كُلِّ شَيْئٍ قَدِيْرٌ",
       latin:
         "Laaailaaha illallaah wahdahu laa syariikalah lahul mulku walahul hamdu yuhyii wayumiitu wahuwa ‘alaa kulli syain qodiir.",
       arti: "Tiada Tuhan yang haq disembah kecuali Allah semata, tiada sekutu baginya. Hanya milikinya segala kerajaan dan hanya milikinya segala puji, baik yang hidup atau mati, Dialah Dzat yang kuasa atas segala sesuatu.",
@@ -41,53 +41,60 @@ export default function dzikir() {
       dibaca: "3 atau 7x",
     },
     {
-      arab: "اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ لَا تَأْخُذُهٗ سِنَةٌ وَّلَا نَوْمٌۗ  لَهٗ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۗ مَنْ ذَا الَّذِيْ يَشْفَعُ عِنْدَهٗٓ اِلَّا بِاِذْنِهٖۗ يَعْلَمُ مَا بَيْنَ اَيْدِيْهِمْ وَمَا خَلْفَهُمْۚ وَلَا يُحِيْطُوْنَ بِشَيْءٍ مِّنْ عِلْمِهٖٓ اِلَّا بِمَا شَاۤءَۚ وَسِعَ كُرْسِيُّهُ السَّمٰوٰتِ وَالْاَرْضَۚ وَلَا يَـُٔوْدُهٗ حِفْظُهُمَاۚ وَهُوَ الْعَلِيُّ الْعَظِيْمُ",
+      arab: "اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ . لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ . لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ . مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ . يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ . وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ . وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ . وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ",
       latin:
         "Alloohu laa ilaaha illaa huwal hayyul qoyyuum, laa ta’khudzuhuu sinatuw walaa naum. Lahuu maa fissamaawaati wa maa fil ardli man dzal ladzii yasyfa’u ‘indahuu illaa biidznih, ya’lamu maa baina aidiihim wamaa kholfahum wa laa yuhiithuuna bisyai’im min ‘ilmihii illaa bimaa syaa’ wasi’a kursiyyuhus samaawaati wal ardlo walaa ya’uuduhuu hifdhuhumaa wahuwal ‘aliyyul ‘adhiim",
       arti: "Allah, tidak ada Tuhan (yang berhak disembah) melainkan Dia Yang Hidup kekal lagi terus menerus mengurus (makhluk-Nya); tidak mengantuk dan tidak tidur. Kepunyaan-Nya apa yang di langit dan di bumi. Tiada yang dapat memberi syafa'at di sisi Allah tanpa izin-Nya? Allah mengetahui apa-apa yang di hadapan mereka dan di belakang mereka, dan mereka tidak mengetahui apa-apa dari ilmu Allah melainkan apa yang dikehendaki-Nya. Kursi Allah meliputi langit dan bumi. Dan Allah tidak merasa berat memelihara keduanya, dan Allah Maha Tinggi lagi Maha Besar.",
       dibaca: "1x",
     },
     {
-      arab: "بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ. قُلْ هُوَ اللهُ أَحَدٌ. اللهُ الصَّمَدُ. لَمْ يَلِدْ وَلَمْ يُولَدْ. وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+      arab: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ . قُلْ هُوَ اللّٰهُ اَحَدٌۚ . اَللّٰهُ الصَّمَدُۚ . لَمْ يَلِدْ وَلَمْ يُوْلَدْۙ . وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
       latin:
         "qul huwallāhu aḥad. allāhuṣ-ṣamad. lam yalid wa lam yụlad wa lam yakul lahụ kufuwan aḥad.",
       arti: "Aku berlindung kepada Tuhan yang menguasai subuh (fajar), dari kejahatan (makhluk yang) Dia ciptakan, dan dari kejahatan malam apabila telah gelap gulita, dan dari kejahatan (perempuan-perempuan) penyihir yang meniup pada buhul-buhul (talinya), dan dari kejahatan orang yang dengki apabila dia dengki.",
       dibaca: "1x",
     },
     {
-      arab: "بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ. قُلْ أَعُوذُ بِرَبِّ النَّاسِ. مَلِكِ النَّاسِ. إِلَهِ النَّاسِ. مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ. الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ. مِنَ الْجِنَّةِ وَالنَّاسِ",
+      arab: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ . قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ . مِنْ شَرِّ مَا خَلَقَ . وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ . وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ. وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ.",
+      latin:
+        "qul a'ụżu birabbil-falaq. min syarri mā khalaq. wa min syarri gāsiqin iżā waqab. wa min syarrin-naffāṡāti fil-'uqad. wa min syarri ḥāsidin iżā ḥasad",
+      arti: "Aku berlindung kepada Tuhan yang menguasai subuh (fajar), dari kejahatan (makhluk yang) Dia ciptakan, dan dari kejahatan malam apabila telah gelap gulita, dan dari kejahatan (perempuan-perempuan) penyihir yang meniup pada buhul-buhul (talinya), dan dari kejahatan orang yang dengki apabila dia dengki.",
+      dibaca: "1x",
+    },
+    {
+      arab: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ . قُلْ أَعُوذُ بِرَبِّ النَّاسِ . مَلِكِ النَّاسِ. إِلَهِ النَّاسِ . مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ . الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ . مِنَ الْجِنَّةِ وَالنَّاسِ",
       latin:
         "qul a'ụżu birabbin-nās. malikin-nās. ilāhin-nās. min syarril-waswāsil-khannās. allażī yuwaswisu fī ṣudụrin-nās. minal-jinnati wan-nās.",
       arti: "Aku berlindung kepada Tuhannya manusia, Raja manusia, sembahan manusia, dari kejahatan (bisikan) setan yang bersembunyi, yang membisikkan (kejahatan) ke dalam dada manusia, dari (golongan) jin dan manusia.",
       dibaca: "1x",
     },
     {
-      arab: "بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ. الْحَمْدُ لِلهِ رَبِّ الْعَالَمِينَ. الرَّحْمَنِ الرَّحِيمِ. مَالِكِ يَوْمِ الدِّينِ. إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ. اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ. صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ. غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ. آمِيْنَ",
+      arab: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ . اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ . الرَّحْمَنِ الرَّحِيمِ . مَالِكِ يَوْمِ الدِّينِ . اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِينُ . اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ . صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ . غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ . آمِيْنَ",
       latin:
         "bismillāhir-raḥmānir-raḥīm. al-ḥamdu lillāhi rabbil-'ālamīn. ar-raḥmānir-raḥīm. māliki yaumid-dīn. iyyāka na'budu wa iyyāka nasta'īn. ihdinaṣ-ṣirāṭal-mustaqīm. ṣirāṭallażīna an'amta 'alaihim gairil-magḍụbi 'alaihim wa laḍ-ḍāllīn.",
       arti: "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang. Segala puji bagi Allah, Tuhan seluruh alam, Yang Maha Pengasih, Maha Penyayang, Pemilik hari pembalasan. Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami mohon pertolongan. Tunjukilah kami jalan yang lurus, (yaitu) jalan orang-orang yang telah Engkau beri nikmat kepadanya; bukan (jalan) mereka yang dimurkai, dan bukan (pula jalan) mereka yang sesat.",
       dibaca: "1x",
     },
     {
-      arab: "سُبْحَانَ اللهِ",
+      arab: "سُبْحَانَ اللّهُ",
       latin: "Subhaanallah.",
       arti: "Maha Suci Allah.",
       dibaca: "33x",
     },
     {
-      arab: "اَلْحَمْدُلِلهِ",
+      arab: "اَلْحَمْدُلِلَّهِ",
       latin: "Alhamdulillaah.",
       arti: "Segala puji bagi Allah.",
       dibaca: "33x",
     },
     {
-      arab: "اَللهُ اَكْبَرْ",
+      arab: "اَللّهُ اَكْبَرُ",
       latin: "Allaahu Akbar.",
       arti: "Allah Maha Besar.",
       dibaca: "33x",
     },
     {
-      arab: "لَاإِلَهَ إِلَّا اللهُ",
+      arab: "لَا إِلَٰهَ إِلَّا ٱللَّٰهُ",
       latin: "LaaIlaha Illalloh.",
       arti: "Tiada Tuhan Selain Allah.",
       dibaca: "33x",
