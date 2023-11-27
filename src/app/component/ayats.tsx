@@ -48,7 +48,7 @@ export default function ayats(props: any) {
           <p className="text-[#3da9fc] flex-none">( {ayat.nomorAyat}. )</p>
           <p
             style={{ lineHeight: "220%", wordSpacing: "3px" }}
-            className={` text-3xl xl:text-4xl text-end antialiased text-[#094067] ${myFont.className}`}>
+            className={`text-4xl text-end antialiased text-[#094067] ${myFont.className}`}>
             {`${ayat.teksArab}`}
           </p>
         </div>
