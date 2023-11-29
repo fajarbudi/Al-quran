@@ -1,5 +1,11 @@
 import Dzikir from "@/app/component/dzikir";
 import Navbar from "@/app/component/navbar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dzikir",
+  description: "Dzikir Indonesia",
+};
 
 export default function page() {
   return (

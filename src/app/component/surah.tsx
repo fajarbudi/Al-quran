@@ -52,7 +52,9 @@ export default function Surah() {
     <>
       <div>
         <Navbar judul="Al-Quran" position="sticky top-0" />
-        <div className="flex justify-center flex-wrap mt-4">{surah()}</div>
+        <div className="flex justify-center xl:justify-start xl:ml-12  flex-wrap mt-4">
+          {surah()}
+        </div>
       </div>
     </>
   );

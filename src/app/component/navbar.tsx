@@ -66,6 +66,13 @@ export default function navbar(props: type) {
                     </span>
                   </Link>
                 </li>
+                <li className=" nav-item">
+                  <Link href="/kumpulanDoa">
+                    <span className=" px-3 py-2 flex items-center text-white hover:opacity-75 ml-2">
+                      Sayyidul Istighfar
+                    </span>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
