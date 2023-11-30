@@ -81,7 +81,7 @@ export default function navbar(props: type) {
             data-aos="fade-down"
             data-aos-delay="1500"
             data-aos-anchor-placement="center-bottom"
-            className="py-4 lg:-ms-72 absolute left-1/4 lg:static">
+            className="py-4 lg:-ms-72 absolute top-1 left-16 lg:static">
             <h1 className="text-xl">{props.judul}</h1>
           </div>
 
