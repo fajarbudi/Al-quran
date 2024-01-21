@@ -7,7 +7,7 @@ export default function Surah() {
   const surah = () => {
     const { data, isLoading } = getSurah();
     if (isLoading)
-      return <h1 className="text-2xl mx-auto">tunggu data.....</h1>;
+      return <h1 className="text-2xl text-center">tunggu data.....</h1>;
 
     const surah = data.data;
     return surah.map((surat: any, i: number) => (
@@ -15,7 +15,8 @@ export default function Surah() {
         <div
           data-aos="flip-down"
           data-aos-anchor-placement="center-bottom"
-          className=" m-6 h-190 rounded-xl text-center px-6 py-4 xl:px-2 xl:w-80 grid content-between relative shadow-claymorpishm1 hover:shadow-claymorpishm3 ">
+          style={{ minWidth: 320 }}
+          className=" m-6 h-190 rounded-xl text-center px-6 py-4 xl:px-2 grid content-between relative shadow-claymorpishm1 hover:shadow-claymorpishm3">
           <div className="flex flex-row justify-between px-6 pt-6">
             <h1
               data-aos-delay="1000"
@@ -52,7 +53,7 @@ export default function Surah() {
     <>
       <div>
         <Navbar judul="Al-Quran" position="sticky top-0" />
-        <div className="flex justify-center xl:justify-start xl:ml-12  flex-wrap mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  dekstop:grid-cols-6 mt-4">
           {surah()}
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function navbar(props: type) {
         <div className="flex justify-between px-4 lg:px-10">
           <div className=" pt-4">
             <button
-              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block minNav:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}>
               <svg
@@ -34,7 +34,7 @@ export default function navbar(props: type) {
               </svg>
             </button>
             <div
-              className={`items-center lg:flex ${
+              className={`items-center minNav:flex ${
                 navbarOpen ? "" : " hidden"
               } transition-all duration-500`}>
               <ul className="flex flex-col lg:flex-row list-none">
@@ -82,7 +82,7 @@ export default function navbar(props: type) {
             data-aos-delay="1500"
             data-aos-anchor-placement="center-bottom"
             className="py-4 lg:-ms-72 absolute top-1 left-16 lg:static">
-            <h1 className="text-xl">{props.judul}</h1>
+            <h1 className="text-base md:text-2xl">{props.judul}</h1>
           </div>
 
           <Link

@@ -99,6 +99,25 @@ export default function dzikir() {
       arti: "Tiada Tuhan Selain Allah.",
       dibaca: "33x",
     },
+    {
+      arab: "رَبِّ أَنِّي مَسَّنِيَ الضُّرُّ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ",
+      latin: "Robbi Anni masanniyad dhurru wa anta ar-hamur rahimin",
+      arti: "[Ya Tuhanku], sesungguhnya aku telah ditimpa penyakit dan Engkau adalah Tuhan Yang Maha Penyayang di antara semua penyayang.",
+      dibaca: "33x",
+    },
+    {
+      arab: "رَبِّ اغْفِرْ لِي وَارْحَمْنِي وَتُبْ عَلَيَّ",
+      latin: "Rabbighfirlii warhamnii watub 'alayya.",
+      arti: "Tuhanku, ampunilah aku, sayangilah aku, dan terimalah taubatku.",
+      dibaca: "33x",
+    },
+    {
+      arab: "سُبْحَانَ اللّٰهِ وَبِحَمْدِهِ عَدَدَ خَلْقَهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ ",
+      latin:
+        "Subhanallahi wa bihamdihi ‘adada khalqihi wa ridha nafsihi wa zinata ‘arsyihi wa midada kalimatihi.",
+      arti: "Maha Suci Allah dan dengan mengucapkan puji-pujian pada-Nya. sebanyak hitungan makhluk-Nya, sesuai dengan keridhaan Zat-Nya, seberat timbangan ‘arasy-Nya dan sepanjang beberapa kalimah-Nya.",
+      dibaca: "7x",
+    },
   ];
   return dzikirs;
 }
