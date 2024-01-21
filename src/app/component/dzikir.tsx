@@ -16,15 +16,15 @@ export default function dzikir() {
               <div>
                 <h1
                   style={{ lineHeight: "220%", wordSpacing: "3px" }}
-                  className={`text-4xl text-[#094067] pb-2 text-end xl:text-center ${
+                  className={` text-3xl lg:text-4xl text-[#094067] pb-2 text-end xl:text-center ${
                     myFont.className
                   } ${i == 6 ? "" : "hidden"}`}>
                   أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ . بِسْمِ
                   اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
                 </h1>
                 <h1
-                  style={{ lineHeight: "220%", wordSpacing: "3px" }}
-                  className={`text-4xl text-[#094067] pb-2 text-end ${myFont.className}`}>
+                  style={{ lineHeight: "250%", wordSpacing: "3px" }}
+                  className={` text-3xl lg:text-4xl text-[#094067] pb-2 text-end ${myFont.className}`}>
                   {dzikir.arab}
                 </h1>
               </div>

@@ -114,8 +114,8 @@ export default function dzikir() {
     {
       arab: "سُبْحَانَ اللّٰهِ وَبِحَمْدِهِ عَدَدَ خَلْقَهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ ",
       latin:
-        "Subhanallahi wa bihamdihi ‘adada khalqihi wa ridha nafsihi wa zinata ‘arsyihi wa midada kalimatihi.",
-      arti: "Maha Suci Allah dan dengan mengucapkan puji-pujian pada-Nya. sebanyak hitungan makhluk-Nya, sesuai dengan keridhaan Zat-Nya, seberat timbangan ‘arasy-Nya dan sepanjang beberapa kalimah-Nya.",
+        "Subhanallahi . wa bihamdihi . `adada khalqihi . wa ridha nafsihi . wa zinata `arsyihi . wa midada kalimatihi.",
+      arti: "Maha Suci Allah dan dengan mengucapkan puji-pujian pada-Nya. sebanyak hitungan makhluk-Nya, sesuai dengan keridhaan Zat-Nya, seberat timbangan `arasy-Nya dan sepanjang beberapa kalimah-Nya.",
       dibaca: "7x",
     },
   ];
