@@ -12,7 +12,7 @@ export default function page() {
     <>
       <main>
         <Navbar judul="Asmaul Husna" position="sticky top-0" />
-        <div className="flex flex-wrap justify-center xl:justify-start xl:ml-16 mt-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 dekstop:grid-cols-10 mt-4 px-4">
           <AsmaulHusna />
         </div>
       </main>

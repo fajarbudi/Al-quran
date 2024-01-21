@@ -53,7 +53,7 @@ export default function Surah() {
     <>
       <div>
         <Navbar judul="Al-Quran" position="sticky top-0" />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  dekstop:grid-cols-6 mt-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 dekstop:grid-cols-6 mt-4">
           {surah()}
         </div>
       </div>
