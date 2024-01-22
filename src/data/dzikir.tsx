@@ -1,14 +1,14 @@
 export default function dzikir() {
   const dzikirs = [
     {
-      arab: "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ <br> الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ <br> وَأَتُوبُ إِلَيْه",
+      arab: "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ . الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ . وَأَتُوبُ إِلَيْه",
       latin:
         "Astaghfirullaahal ‘adziim alladzii laaailaaha illaa huwal hayyulqoyyuum wa atuubu ilaih.",
       arti: "Aku memohon ampun kepada Allah yang maha agung , tiada Tuhan yang berhak disembah kecuali Allah, dzat yang maha hidup kekal abadi dan terus menerus mengurus makhluknya tiada henti. Dan aku bertaubat kepada-Nya.",
       dibaca: "3x",
     },
     {
-      arab: "اَللَّهُمَّ أَنْتَ السَّلاَمُ <br> وَمِنْكَ السَّلاَمُ <br> وَإِلَيْكَ يَعُوْدُ السَّلاَمُ <br> فَحَيِّنَا رَبَّنَا بِالسَّلاَمِ <br> وَأَدْخِلْنَا الْجَنَّةَ دَارَ السَّلاَمِ <br> تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ <br> يَا ذَالْجَلاَلِ وَالْأِ كْرَامِ",
+      arab: "اَللَّهُمَّ أَنْتَ السَّلاَمُ . وَمِنْكَ السَّلاَمُ . وَإِلَيْكَ يَعُوْدُ السَّلاَمُ . فَحَيِّنَا رَبَّنَا بِالسَّلاَمِ . وَأَدْخِلْنَا الْجَنَّةَ دَارَ السَّلاَمِ . تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ <br> يَا ذَالْجَلاَلِ وَالْأِ كْرَامِ",
       latin:
         "Allaahumma antas salaam waminkas salaam wa ilaika ya’uudus salaam fahayyinaa robbanaa bis salaam wa adkhilnal jannata daaros salaam tabaarokta robbanaa wa ta’aalaita yaa dzal jalaali wal ikroom",
       arti: "Ya Allah, engkaulah Dzat yang memberi keselamatan (kesejahteraan), hanya darimu lah keselamatan (kesejahteraan) dan kepadamua lah segala keselamatan (kesejahteraan) itu kembali. Maka hidupkanlah kami Ya Allah dengan selamat (sejahtera), masukkan kami ke dalam surga rumah keselamatan (kesejahteraan), Engkaulah Dzat yang berkah wahai Tuhan kami dan maha luhur Engkau, Ya Tuhan kami yang Dzat yang memiliki keagungan dan kemuliaan.",
@@ -28,7 +28,7 @@ export default function dzikir() {
       dibaca: "1x",
     },
     {
-      arab: "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لَا شَرِيْكَ لَهُ <br> لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِيْ <br> وَيُمِيْتُ وَهُوَ عَلَى كُلِّ شَيْئٍ قَدِيْرٌ",
+      arab: "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لَا شَرِيْكَ لَهُ  لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ  يُحْيِيْ  وَيُمِيْتُ وَهُوَ عَلَى كُلِّ شَيْئٍ قَدِيْرٌ",
       latin:
         "Laaailaaha illallaah wahdahu laa syariikalah lahul mulku walahul hamdu yuhyii wayumiitu wahuwa ‘alaa kulli syain qodiir.",
       arti: "Tiada Tuhan yang haq disembah kecuali Allah semata, tiada sekutu baginya. Hanya milikinya segala kerajaan dan hanya milikinya segala puji, baik yang hidup atau mati, Dialah Dzat yang kuasa atas segala sesuatu.",
@@ -100,19 +100,19 @@ export default function dzikir() {
       dibaca: "33x",
     },
     {
-      arab: "رَبِّ أَنِّي مَسَّنِيَ الضُّرُّ <br> وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ",
+      arab: "رَبِّ أَنِّي مَسَّنِيَ الضُّرُّ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ",
       latin: "Robbi Anni masanniyad dhurru wa anta ar-hamur rahimin",
       arti: "[Ya Tuhanku], sesungguhnya aku telah ditimpa penyakit dan Engkau adalah Tuhan Yang Maha Penyayang di antara semua penyayang.",
       dibaca: "33x",
     },
     {
-      arab: "رَبِّ اغْفِرْ لِي وَارْحَمْنِي <br> وَتُبْ عَلَيَّ",
+      arab: "رَبِّ اغْفِرْ لِي وَارْحَمْنِي وَتُبْ عَلَيَّ",
       latin: "Rabbighfirlii warhamnii watub 'alayya.",
       arti: "Tuhanku, ampunilah aku, sayangilah aku, dan terimalah taubatku.",
       dibaca: "33x",
     },
     {
-      arab: "سُبْحَانَ اللّٰهِ <br> وَبِحَمْدِهِ عَدَدَ خَلْقَهِ <br> وَرِضَى نَفْسِهِ <br> وَزِنَةَ عَرْشِهِ <br> وَمِدَادَ كَلِمَاتِهِ ",
+      arab: "سُبْحَانَ اللّٰهِ وَبِحَمْدِهِ عَدَدَ خَلْقَهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ ",
       latin:
         "Subhanallahi wa bihamdihi `adada khalqihi wa ridha nafsihi wa zinata `arsyihi wa midada kalimatihi.",
       arti: "Maha Suci Allah dan dengan mengucapkan puji-pujian pada-Nya. sebanyak hitungan makhluk-Nya, sesuai dengan keridhaan Zat-Nya, seberat timbangan `arasy-Nya dan sepanjang beberapa kalimah-Nya.",
