@@ -15,11 +15,11 @@ module.exports = {
       },
       boxShadow: {
         claymorpishm1:
-          "inset 4.27px 4.22px 8.49px -1.06px rgba(0, 0, 0, 0.15), inset -6.40px -6.33px 8.49px -1.06px rgba(0, 0, 0, 0.2), 12.80px 12.66px 6.36px -3.18px rgba(0, 0, 0, 0.3)",
+          "inset 2.02px 3.45px 5.47px -0.68px rgba(0, 0, 0, 0.1),inset -3.04px -5.17px 5.47px -0.68px rgba(0, 0, 0, 0.2),6.07px 10.35px 4.11px -2.05px rgba(0, 0, 0, 0.3);",
         claymorpishm2:
-          "inset 2.13px 2.11px 4.24px -0.53px rgba(0, 0, 0, 0.15), inset -3.20px -3.16px 4.24px -0.53px rgba(0, 0, 0, 0.2), 6.40px 6.33px 3.18px -1.59px rgba(0, 0, 0, 0.3)",
+          "inset 1.52px 2.59px 4.11px -0.51px rgba(0, 0, 0, 0.15),inset -2.28px -3.88px 4.11px -0.51px rgba(0, 0, 0, 0.3),4.56px 7.76px 3.08px -1.54px rgba(0, 0, 0, 0.4);",
         claymorpishm3:
-          "inset 6.40px 6.33px 12.73px -1.59px rgba(0, 0, 0, 0.15), inset -9.60px -9.49px 12.73px -1.59px rgba(0, 0, 0, 0.25), 19.19px 18.99px 9.55px -4.77px rgba(0, 0, 0, 0.35)",
+          "inset 2.53px 4.31px 6.84px -0.86px rgba(0, 0, 0, 0.15),inset -3.80px -6.47px 6.84px -0.86px rgba(0, 0, 0, 0.3),7.59px 12.94px 5.13px -2.57px rgba(0, 0, 0, 0.4);",
 
         "3d": "0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2)",
       },
