@@ -1,5 +1,5 @@
-import AsmaulHusna from "@/app/component/asmaulHusna";
-import Navbar from "@/app/component/navbar";
+import AsmaulHusna from "../../app/component/asmaulHusna/asmaulHusna";
+import Navbar from "../../app/component/navbar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

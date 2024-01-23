@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Navbar from "@/app/component/navbar";
-import { getSurah } from "@/app/component/useFetchData";
+import { getSurah } from "@/app/component/function/useFetchData";
 
 export default function Surah() {
   const surah = () => {

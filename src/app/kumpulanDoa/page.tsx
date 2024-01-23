@@ -1,4 +1,4 @@
-import SayyidulIstighfar from "@/app/component/sayyidulIstighfar";
+import SayyidulIstighfar from "../../app/component/sayyidulIstighfar/sayyidulIstighfar";
 import Navbar from "@/app/component/navbar";
 import { Metadata } from "next";
 

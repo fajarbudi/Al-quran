@@ -1,10 +1,10 @@
-import Tafsir from "@/app/component/tafsir";
-import { simpan, lanjutkan } from "@/app/component/useAlert";
+import Tafsir from "./tafsir";
+import { simpan, lanjutkan } from "../function/useAlert";
 import localFont from "next/font/local";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-const myFont = localFont({ src: "../../font/LPMQ.ttf" });
+const myFont = localFont({ src: "../../../font/LPMQ.ttf" });
 interface type {
   nomorAyat: number;
   teksArab: string;

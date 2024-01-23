@@ -1,5 +1,5 @@
 "use client";
-import { getAsmaulHusna } from "@/app/component/useFetchData";
+import { getAsmaulHusna } from "@/app/component/function/useFetchData";
 
 export default function asmaulHusna() {
   const { data, isLoading } = getAsmaulHusna();

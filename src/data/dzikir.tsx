@@ -8,7 +8,7 @@ export default function dzikir() {
       dibaca: "3x",
     },
     {
-      arab: "اَللَّهُمَّ أَنْتَ السَّلاَمُ . وَمِنْكَ السَّلاَمُ . وَإِلَيْكَ يَعُوْدُ السَّلاَمُ . فَحَيِّنَا رَبَّنَا بِالسَّلاَمِ . وَأَدْخِلْنَا الْجَنَّةَ دَارَ السَّلاَمِ . تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ <br> يَا ذَالْجَلاَلِ وَالْأِ كْرَامِ",
+      arab: "اَللَّهُمَّ أَنْتَ السَّلاَمُ . وَمِنْكَ السَّلاَمُ . وَإِلَيْكَ يَعُوْدُ السَّلاَمُ  فَحَيِّنَا رَبَّنَا بِالسَّلاَمِ . وَأَدْخِلْنَا الْجَنَّةَ دَارَ السَّلاَمِ . تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ <br> يَا ذَالْجَلاَلِ وَالْأِ كْرَامِ",
       latin:
         "Allaahumma antas salaam waminkas salaam wa ilaika ya’uudus salaam fahayyinaa robbanaa bis salaam wa adkhilnal jannata daaros salaam tabaarokta robbanaa wa ta’aalaita yaa dzal jalaali wal ikroom",
       arti: "Ya Allah, engkaulah Dzat yang memberi keselamatan (kesejahteraan), hanya darimu lah keselamatan (kesejahteraan) dan kepadamua lah segala keselamatan (kesejahteraan) itu kembali. Maka hidupkanlah kami Ya Allah dengan selamat (sejahtera), masukkan kami ke dalam surga rumah keselamatan (kesejahteraan), Engkaulah Dzat yang berkah wahai Tuhan kami dan maha luhur Engkau, Ya Tuhan kami yang Dzat yang memiliki keagungan dan kemuliaan.",
