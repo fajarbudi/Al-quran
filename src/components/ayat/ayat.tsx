@@ -1,15 +1,15 @@
 "use client";
-import Navbar from "@/app/component/navbar";
-import Deskripsi from "@/app/component/ayat/deskripsi";
-import NextPrevSurah from "@/app/component/function/NextPrevSurah";
-import Ayats from "@/app/component/ayat/ayats";
-import { getAyat } from "@/app/component/function/useFetchData";
+import Navbar from "@/components/navbar";
+import Deskripsi from "@/components/ayat/deskripsi";
+import NextPrevSurah from "@/components/function/NextPrevSurah";
+import Ayats from "@/components/ayat/ayats";
+import { getAyat } from "@/components/function/useFetchData";
 import localFont from "next/font/local";
 
 interface type {
   id: number;
 }
-const myFont = localFont({ src: "../../../font/LPMQ.ttf" });
+const myFont = localFont({ src: "../../font/LPMQ.ttf" });
 export default function Ayat(props: type) {
   const { data, isLoading } = getAyat(props.id);
 

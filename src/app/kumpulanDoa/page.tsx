@@ -1,5 +1,5 @@
-import SayyidulIstighfar from "../../app/component/sayyidulIstighfar/sayyidulIstighfar";
-import Navbar from "@/app/component/navbar";
+import SayyidulIstighfar from "@/components/sayyidulIstighfar/sayyidulIstighfar";
+import Navbar from "@/components/navbar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { getTafsir } from "@/app/component/function/useFetchData";
+import { getTafsir } from "@/components/function/useFetchData";
 
 interface type {
   NomorAyat: number;

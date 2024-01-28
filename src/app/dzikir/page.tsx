@@ -1,5 +1,5 @@
-import Dzikir from "../../app/component/dzikir/dzikir";
-import Navbar from "../../app/component/navbar";
+import Dzikir from "@/components/dzikir/dzikir";
+import Navbar from "@/components/navbar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

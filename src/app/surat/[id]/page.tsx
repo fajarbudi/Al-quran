@@ -1,4 +1,4 @@
-import Ayat from "../../../app/component/ayat/ayat";
+import Ayat from "@/components/ayat/ayat";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

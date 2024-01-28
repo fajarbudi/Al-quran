@@ -1,6 +1,6 @@
 import sayyidulIstighfar from "@/data/sayyidulIstighfar";
 import localFont from "next/font/local";
-const myFont = localFont({ src: "../../../font/LPMQ.ttf" });
+const myFont = localFont({ src: "../../font/LPMQ.ttf" });
 
 export default function sayyidulIstighfars() {
   const data = sayyidulIstighfar();

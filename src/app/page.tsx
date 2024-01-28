@@ -1,4 +1,4 @@
-import Surah from "../app/component/home/surah";
+import Surah from "@/components/home/surah";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

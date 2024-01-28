@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import dzikirs from "@/data/dzikir";
-const myFont = localFont({ src: "../../../font/LPMQ.ttf" });
+const myFont = localFont({ src: "../../font/LPMQ.ttf" });
 
 export default function dzikir() {
   const Dzikirs = dzikirs();
