@@ -1,5 +1,6 @@
-export default function sayyidulIstighfar() {
-  const sayyidulIstighfar = [
+import { NextResponse } from "next/server";
+export async function GET() {
+  return NextResponse.json([
     {
       arab: "اَللَّهُمَّ أَنْتَ رَبِّيْ لَا إِلَهَ إِلَّا أَنْتَ خَلَقْتَنِيْ",
       latin: "Allâhumma anta rabbî, lâ ilâha illâ anta khalaqtanî.",
@@ -30,6 +31,5 @@ export default function sayyidulIstighfar() {
       latin: "Fa innahû lâ yaghfirudz dzunûba illâ anta.",
       arti: "Sungguh tiada yang mengampuni dosa selain Engkau.",
     },
-  ];
-  return sayyidulIstighfar;
+  ]);
 }

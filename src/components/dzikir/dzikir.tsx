@@ -1,13 +1,24 @@
+"use client";
 import localFont from "next/font/local";
-import dzikirs from "@/data/dzikir";
+import { getDzikir } from "@/components/function/useFetchData";
 const myFont = localFont({ src: "../../font/LPMQ.ttf" });
 
 export default function dzikir() {
-  const Dzikirs = dzikirs();
+  const { data, isLoading } = getDzikir();
+  if (isLoading)
+    return <h1 className="text-center text-2xl mt-4">Tunggu Data......</h1>;
+  const dzikirs = data;
+
+  interface type {
+    arab: string;
+    latin: string;
+    dibaca: string;
+    arti: string;
+  }
   return (
     <>
       <section className="flex flex-wrap justify-center py-10">
-        {Dzikirs.map((dzikir, i) => (
+        {dzikirs.map((dzikir: type, i: number) => (
           <div
             key={i}
             className="shadow-claymorpishm1 rounded-xl p-4 w-11/12 xl:w-9/12 my-4">

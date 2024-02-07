@@ -1,11 +1,12 @@
-export default function dzikir() {
-  const dzikirs = [
+import { NextResponse } from "next/server";
+export async function GET() {
+  return NextResponse.json([
     {
       arab: "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ . الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ . وَأَتُوبُ إِلَيْه",
       latin:
         "Astaghfirullaahal ‘adziim alladzii laaailaaha illaa huwal hayyulqoyyuum wa atuubu ilaih.",
       arti: "Aku memohon ampun kepada Allah yang maha agung , tiada Tuhan yang berhak disembah kecuali Allah, dzat yang maha hidup kekal abadi dan terus menerus mengurus makhluknya tiada henti. Dan aku bertaubat kepada-Nya.",
-      dibaca: "3x",
+      dibaca: "7x",
     },
     {
       arab: "اَللَّهُمَّ أَنْتَ السَّلاَمُ . وَمِنْكَ السَّلاَمُ . وَإِلَيْكَ يَعُوْدُ السَّلاَمُ  فَحَيِّنَا رَبَّنَا بِالسَّلاَمِ . وَأَدْخِلْنَا الْجَنَّةَ دَارَ السَّلاَمِ . تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ <br> يَا ذَالْجَلاَلِ وَالْأِ كْرَامِ",
@@ -118,6 +119,5 @@ export default function dzikir() {
       arti: "Maha Suci Allah dan dengan mengucapkan puji-pujian pada-Nya. sebanyak hitungan makhluk-Nya, sesuai dengan keridhaan Zat-Nya, seberat timbangan `arasy-Nya dan sepanjang beberapa kalimah-Nya.",
       dibaca: "7x",
     },
-  ];
-  return dzikirs;
+  ]);
 }

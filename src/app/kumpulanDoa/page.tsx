@@ -1,4 +1,5 @@
-import SayyidulIstighfar from "@/components/sayyidulIstighfar/sayyidulIstighfar";
+import SayyidulIstighfar from "@/components/kumpulanDoa/sayyidulIstighfar";
+import AlBaqarah from "@/components/kumpulanDoa/alBaqarah";
 import Navbar from "@/components/navbar";
 import { Metadata } from "next";
 
@@ -13,6 +14,7 @@ export default function kumpulanDoa() {
       <main>
         <Navbar judul="Sayyidul Istighfar" position="sticky top-0" />
         <SayyidulIstighfar />
+        <AlBaqarah />
       </main>
     </>
   );

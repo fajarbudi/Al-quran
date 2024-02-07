@@ -15,6 +15,18 @@ export function getTafsir(nomorAyat: number) {
   return useSWR(`https://equran.id/api/v2/tafsir/${nomorAyat}`, fetcher);
 }
 
+export function getAlBaqarah() {
+  return useSWR(`https://equran.id/api/v2/surat/2`, fetcher);
+}
+
+export function getDzikir() {
+  return useSWR("/data/dzikir", fetcher);
+}
+
+export function getSayyidulIstighfar() {
+  return useSWR("/data/sayyidulIstighfar", fetcher);
+}
+
 export function getAsmaulHusna() {
   return useSWR("https://asmaul-husna-api.vercel.app/api/all", fetcher);
 }

@@ -1,10 +1,18 @@
-import sayyidulIstighfar from "@/data/sayyidulIstighfar";
+"use client";
+import { getSayyidulIstighfar } from "@/components/function/useFetchData";
 import localFont from "next/font/local";
 const myFont = localFont({ src: "../../font/LPMQ.ttf" });
 
 export default function sayyidulIstighfars() {
-  const data = sayyidulIstighfar();
+  const { data, isLoading } = getSayyidulIstighfar();
+  if (isLoading)
+    return <h1 className="text-center text-2xl mt-4">Tunggu Data....</h1>;
 
+  interface type {
+    arab: string;
+    latin: string;
+    arti: string;
+  }
   return (
     <>
       <section className="flex justify-center mt-6">
@@ -12,7 +20,7 @@ export default function sayyidulIstighfars() {
           <h1 className="text-center text-[#094067] text-3xl">
             Sayyidul Istighfar
           </h1>
-          {data.map((SayyidulIstighfar, i) => (
+          {data.map((SayyidulIstighfar: type, i: number) => (
             <div key={i} className="my-6 shadow-claymorpishm2 p-4 rounded-xl">
               <div className="flex flex-row justify-between">
                 <p>{i + 1}.</p>
