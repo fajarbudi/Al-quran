@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-const myFont = localFont({ src: "../../font/LPMQ.ttf" });
+const myFont = localFont({ src: "../../../public/font/LPMQ.ttf" });
 interface type {
   nomorAyat: number;
   teksArab: string;
@@ -35,7 +35,7 @@ export default function ayats(props: any) {
       data-aos-delay="500"
       data-aos-anchor-placement="top-bottom"
       key={i}
-      className=" cursor-pointer my-10 mx-4 py-6 px-4 rounded-xl md:w-7/12 2xl:w-8/12 md:m-10 shadow-claymorpishm1 hover:shadow-claymorpishm3">
+      className=" cursor-pointer my-10 mx-4 py-6 px-4 rounded-xl md:w-7/12 2xl:w-8/12 md:m-10 shadow-claymorpishm1 hover:shadow-claymorpishm3 relative">
       <div
         onClick={() => {
           simpan(
@@ -44,14 +44,14 @@ export default function ayats(props: any) {
             surah.namaLatin
           );
         }}>
-        <div className="flex flex-row justify-between gap-2">
-          <p className="text-[#3da9fc] flex-none">( {ayat.nomorAyat}. )</p>
-          <p
-            style={{ lineHeight: "250%", wordSpacing: "3px" }}
-            className={` text-3xl lg:text-4xl text-end antialiased text-[#094067] ${myFont.className}`}>
-            {`${ayat.teksArab}`}
-          </p>
-        </div>
+        <p className="h-10 text-[#3da9fc] absolute top-4">
+          ( {ayat.nomorAyat}. )
+        </p>
+        <p
+          style={{ lineHeight: "250%", wordSpacing: "3px" }}
+          className={` text-3xl lg:text-4xl text-end antialiased text-[#094067] ${myFont.className}`}>
+          {`${ayat.teksArab}`}
+        </p>
         <div className="md:flex flex-row justify-between">
           <div className="mr-4">
             <p className="my-2">{ayat.teksLatin}</p>

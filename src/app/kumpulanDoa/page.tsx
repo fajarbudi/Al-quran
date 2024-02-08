@@ -4,8 +4,8 @@ import Navbar from "@/components/navbar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sayyidul Istighfar",
-  description: "Sayyidul Istighfar Indonesia",
+  title: "Kumpulan Doa",
+  description: "Kumpulan Doa dengan arti bahasa Indonesia",
 };
 
 export default function kumpulanDoa() {

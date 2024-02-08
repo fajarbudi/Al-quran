@@ -4,7 +4,9 @@ import { getAsmaulHusna } from "@/components/function/useFetchData";
 export default function asmaulHusna() {
   const { data, isLoading } = getAsmaulHusna();
   if (isLoading)
-    return <h1 className="text-2xl mt-4 lg:text-center">Loading...</h1>;
+    return (
+      <h1 className="text-2xl lg:text-center w-screen">Tunggu Data.....</h1>
+    );
   const Data = data.data;
 
   interface type {

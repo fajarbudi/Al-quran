@@ -7,11 +7,13 @@ export default function Surah() {
   const surah = () => {
     const { data, isLoading } = getSurah();
     if (isLoading)
-      return <h1 className="text-2xl text-center">tunggu data.....</h1>;
+      return (
+        <h1 className="text-2xl text-center w-screen">tunggu data.....</h1>
+      );
 
     const surah = data.data;
     return surah.map((surat: any, i: number) => (
-      <Link key={i} href={`/surat/${surat.nomor}`}>
+      <Link key={i} href={`/surah/${surat.nomor}`}>
         <div
           data-aos="flip-down"
           data-aos-anchor-placement="center-bottom"

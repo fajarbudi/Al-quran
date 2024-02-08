@@ -53,7 +53,7 @@ export default function navbar(props: type) {
                   </Link>
                 </li>
                 <li className=" nav-item">
-                  <Link href="/surat/36">
+                  <Link href="/surah/36">
                     <span className=" px-3 py-2 flex items-center text-white hover:opacity-75 ml-2">
                       Yasin
                     </span>

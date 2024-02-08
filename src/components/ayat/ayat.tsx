@@ -9,7 +9,7 @@ import localFont from "next/font/local";
 interface type {
   id: number;
 }
-const myFont = localFont({ src: "../../font/LPMQ.ttf" });
+const myFont = localFont({ src: "../../../public/font/LPMQ.ttf" });
 export default function Ayat(props: type) {
   const { data, isLoading } = getAyat(props.id);
 
