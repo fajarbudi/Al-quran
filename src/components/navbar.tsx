@@ -87,7 +87,7 @@ export default function navbar(props: type) {
 
           <Link
             className="pt-2 "
-            href={`${!url.namaSurah ? `/` : `/surat/${url.noSurah}`}`}>
+            href={`${!url.namaSurah ? `/` : `/surah/${url.noSurah}`}`}>
             <div className="text-center px-2 py-px rounded-md active:bg-sky-600  shadow-3d ">
               <p>{!url.namaSurah ? "Tekan Ayat" : "Lanjutkan"}</p>
               <p>

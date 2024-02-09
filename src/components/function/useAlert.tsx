@@ -44,7 +44,7 @@ export function lanjutkan(url: any, router: any) {
     confirmButtonText: "Yes, Lanjutkan",
   }).then((result) => {
     if (result.isConfirmed) {
-      router.push(`/surat/${url.noSurah}#${url.noAyat}`);
+      router.push(`/surah/${url.noSurah}#${url.noAyat}`);
       const Toast = Swal.mixin({
         toast: true,
         position: "top-end",
