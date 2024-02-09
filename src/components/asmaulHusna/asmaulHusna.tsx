@@ -1,13 +1,7 @@
 "use client";
-import { getAsmaulHusna } from "@/components/function/useFetchData";
 
-export default function asmaulHusna() {
-  const { data, isLoading } = getAsmaulHusna();
-  if (isLoading)
-    return (
-      <h1 className="text-2xl lg:text-center w-screen">Tunggu Data.....</h1>
-    );
-  const Data = data.data;
+export default async function asmaulHusna(props: any) {
+  const Data = props.data;
 
   interface type {
     latin: string;

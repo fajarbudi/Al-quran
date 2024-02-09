@@ -1,32 +1,19 @@
-"use client";
-import useSWR from "swr";
-
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
-
-export function getSurah() {
-  return useSWR("https://equran.id/api/v2/surat", fetcher);
+export async function getDzikir(host: any) {
+  const res = await fetch(`http://${host}/data/dzikir`);
+  return res.json();
 }
 
-export function getAyat(noAyat: number) {
-  return useSWR(`https://equran.id/api/v2/surat/${noAyat}`, fetcher);
+export async function getSurah() {
+  const res = await fetch("https://equran.id/api/v2/surat");
+  return res.json();
 }
 
-export function getTafsir(nomorAyat: number) {
-  return useSWR(`https://equran.id/api/v2/tafsir/${nomorAyat}`, fetcher);
+export async function getAyat(noAyat: number) {
+  const res = await fetch(`https://equran.id/api/v2/surat/${noAyat}`);
+  return res.json();
 }
 
-export function getAlBaqarah() {
-  return useSWR(`https://equran.id/api/v2/surat/2`, fetcher);
-}
-
-export function getDzikir() {
-  return useSWR("/data/dzikir", fetcher);
-}
-
-export function getSayyidulIstighfar() {
-  return useSWR("/data/sayyidulIstighfar", fetcher);
-}
-
-export function getAsmaulHusna() {
-  return useSWR("https://asmaul-husna-api.vercel.app/api/all", fetcher);
+export async function getAsmaulHusna() {
+  const res = await fetch("https://asmaul-husna-api.vercel.app/api/all");
+  return res.json();
 }

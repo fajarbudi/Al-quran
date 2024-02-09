@@ -1,5 +1,5 @@
 "use client";
-import { getAlBaqarah } from "@/components/function/useFetchData";
+import { getAlBaqarah } from "@/components/function/useFetchData1";
 import localFont from "next/font/local";
 const myFont = localFont({ src: "../../../public/font/LPMQ.ttf" });
 

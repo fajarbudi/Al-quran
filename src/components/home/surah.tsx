@@ -1,17 +1,16 @@
 "use client";
 import Link from "next/link";
 import Navbar from "@/components/navbar";
-import { getSurah } from "@/components/function/useFetchData";
 
-export default function Surah() {
+export default function Surah(props: any) {
   const surah = () => {
-    const { data, isLoading } = getSurah();
-    if (isLoading)
-      return (
-        <h1 className="text-2xl text-center w-screen">tunggu data.....</h1>
-      );
+    // const { data, isLoading } = getSurah();
+    // if (isLoading)
+    //   return (
+    //     <h1 className="text-2xl text-center w-screen">tunggu data.....</h1>
+    //   );
 
-    const surah = data.data;
+    const surah = props.data;
     return surah.map((surat: any, i: number) => (
       <Link key={i} href={`/surah/${surat.nomor}`}>
         <div

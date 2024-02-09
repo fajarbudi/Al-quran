@@ -1,5 +1,6 @@
 import Ayat from "@/components/ayat/ayat";
 import type { Metadata } from "next";
+import { getAyat } from "@/components/function/useFetchData";
 
 type Props = {
   params: { id: string };
@@ -17,11 +18,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function page({ params }: { params: { id: number } }) {
+export default async function page({ params }: { params: { id: number } }) {
+  const res = await getAyat(params.id);
+  const data = res.data;
   return (
     <>
       <main>
-        <Ayat id={params.id} />
+        <Ayat id={params.id} data={data} />
       </main>
     </>
   );
