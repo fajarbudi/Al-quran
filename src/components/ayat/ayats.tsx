@@ -60,7 +60,7 @@ export default function ayats(props: any) {
           <div>
             <audio
               controls
-              className="rounded-xl my-4 mx-auto bg-blue-400 shadow-claymorpishm2">
+              className="rounded-xl my-4 mx-auto bg-[#0593E8] shadow-claymorpishm2">
               <source src={`${ayat.audio["05"]}`} type="audio/mp3" />
             </audio>
           </div>

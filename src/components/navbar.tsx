@@ -17,7 +17,7 @@ export default function navbar(props: type) {
   return (
     <>
       <nav
-        className={`bg-[#3da9fc] text-white ${props.position} mx-4 rounded-b-xl z-10 shadow-3d pb-4`}>
+        className={`bg-[#0593E8] text-white ${props.position} mx-4 rounded-b-xl z-10 shadow-3d pb-4`}>
         <div className="flex justify-between px-4 lg:px-10">
           <div className=" pt-4">
             <button

@@ -14,7 +14,7 @@ export default function deskripsi(props: type) {
             isHidden ? setIsHidden(false) : setIsHidden(true);
           }}
           style={{ writingMode: "vertical-rl" }}
-          className="bg-[#3da9fc] text-white rounded-md py-4 px-px absolute top-1/4 left-3 md:hidden shadow-claymorpishm2">
+          className="bg-[#0593E8] text-white rounded-md py-4 px-px absolute top-1/4 left-3 md:hidden shadow-claymorpishm2">
           {isHidden ? "Deskripsi" : "Close"}
         </button>
         <div
@@ -22,7 +22,7 @@ export default function deskripsi(props: type) {
             isHidden ? "-mr-coba" : ""
           } transition-all duration-500 md:mr-px`}>
           <div className=" w-80 p-4 rounded-xl -my-16 mx-8 md:my-12 md:w-64 xl:w-96 2xl:h-auto bg-white shadow-claymorpishm1">
-            <div className="text-center text-white text-xl bg-[#3da9fc] absolute -top-20 md:top-6 py-2 px-10 rounded-xl shadow-claymorpishm2">
+            <div className="text-center text-white text-xl bg-[#0593E8] absolute -top-20 md:top-6 py-2 px-10 rounded-xl shadow-claymorpishm2">
               Deskripsi
             </div>
             <div

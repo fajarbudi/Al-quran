@@ -16,9 +16,9 @@ export default function selanjutnya(props: type) {
             ? "justify-center"
             : "justify-evenly"
         }`}>
-        <Link href={`/surat/${props.prevNomor}`}>
+        <Link href={`/surah/${props.prevNomor}`}>
           <div
-            className={`bg-[#3da9fc] px-4 py-2 rounded-xl shadow-claymorpishm2 ${
+            className={`bg-[#0593E8] px-4 py-2 rounded-xl shadow-claymorpishm2 ${
               !props.prevSurah ? "hidden" : "block"
             }`}>
             <p>Sebelumnya</p>
@@ -28,9 +28,9 @@ export default function selanjutnya(props: type) {
             </div>
           </div>
         </Link>
-        <Link href={`/surat/${props.nextNomor}`}>
+        <Link href={`/surah/${props.nextNomor}`}>
           <div
-            className={`bg-[#3da9fc] px-4 py-2 rounded-xl shadow-claymorpishm2 ${
+            className={`bg-[#0593E8] px-4 py-2 rounded-xl shadow-claymorpishm2 ${
               !props.nextSurah ? "hidden" : "block"
             }`}>
             <p className="text-center">Selanjutnya</p>

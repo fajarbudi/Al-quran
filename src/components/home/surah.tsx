@@ -23,7 +23,7 @@ export default function Surah(props: any) {
               data-aos-delay="1000"
               data-aos="zoom-in"
               data-aos-anchor-placement="bottom-bottom"
-              className="text-white bg-[#3da9fc] px-8 py-2 rounded-xl absolute -top-4 shadow-claymorpishm2">
+              className="text-white bg-[#0593E8] px-8 py-2 rounded-xl absolute -top-4 shadow-claymorpishm2">
               {surat.namaLatin}
             </h1>
             <p>{surat.nomor}.</p>
@@ -38,10 +38,10 @@ export default function Surah(props: any) {
               {surat.nama}
             </p>
           </div>
-          <div className=" border-[#3da9fc] border-t-2 pt-2 mx-auto">
+          <div className=" border-[#0593E8] border-t-2 pt-2 mx-auto">
             <audio
               controls
-              className="rounded-xl bg-[#3da9fc] shadow-claymorpishm2 h-10">
+              className="rounded-xl bg-[#0593E8] shadow-claymorpishm2 h-10">
               <source src={`${surat.audioFull["05"]}`} type="audio/mp3" />
             </audio>
           </div>

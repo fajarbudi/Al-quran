@@ -30,7 +30,7 @@ export default function tafsir(props: type) {
           data-aos-delay="600"
           data-aos="zoom-in"
           data-aos-anchor-placement="top-bottom"
-          className="py-2 px-6 absolute text-white rounded-xl bg-[#3da9fc] right-2/4 shadow-claymorpishm2"
+          className="py-2 px-6 absolute text-white rounded-xl bg-[#0593E8] right-2/4 shadow-claymorpishm2"
           onClick={() => {
             isHidden == "hidden" ? setIsHidden("block") : setIsHidden("hidden");
           }}>
