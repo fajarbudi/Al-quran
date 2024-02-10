@@ -1,17 +1,12 @@
-"use client";
 import Link from "next/link";
 import Navbar from "@/components/navbar";
+import { getSurah } from "@/components/function/useFetchData";
 
-export default function Surah(props: any) {
+export default async function Surah() {
+  const res = await getSurah();
+  const data = res.data;
   const surah = () => {
-    // const { data, isLoading } = getSurah();
-    // if (isLoading)
-    //   return (
-    //     <h1 className="text-2xl text-center w-screen">tunggu data.....</h1>
-    //   );
-
-    const surah = props.data;
-    return surah.map((surat: any, i: number) => (
+    return data.map((surat: any, i: number) => (
       <Link key={i} href={`/surah/${surat.nomor}`}>
         <div
           data-aos="flip-down"

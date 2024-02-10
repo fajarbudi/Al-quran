@@ -1,3 +1,4 @@
+"use client";
 import Tafsir from "./tafsir";
 import { simpan, lanjutkan } from "@/components/function/useAlert";
 import localFont from "next/font/local";

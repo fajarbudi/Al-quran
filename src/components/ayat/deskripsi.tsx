@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 interface type {
   deskripsi: string;
@@ -5,7 +6,7 @@ interface type {
 }
 export default function deskripsi(props: type) {
   const [isHidden, setIsHidden] = useState(true);
-  
+
   return (
     <>
       <div className="fixed right-0">

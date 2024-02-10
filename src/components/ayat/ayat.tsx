@@ -1,5 +1,5 @@
-"use client";
 import Navbar from "@/components/navbar";
+import { getAyat } from "@/components/function/useFetchData";
 import Deskripsi from "@/components/ayat/deskripsi";
 import NextPrevSurah from "@/components/function/NextPrevSurah";
 import Ayats from "@/components/ayat/ayats";
@@ -7,14 +7,13 @@ import localFont from "next/font/local";
 
 interface type {
   id: number;
-  data: any;
 }
 const myFont = localFont({ src: "../../../public/font/LPMQ.ttf" });
-export default function Ayat(props: type) {
-  const surah = props.data;
+export default async function Ayat(props: type) {
+  const res = await getAyat(props.id);
+  const surah = res.data;
   const selanjutnya = surah.suratSelanjutnya;
   const sebelumnya = surah.suratSebelumnya;
-
   return (
     <>
       <div>
