@@ -1,17 +1,22 @@
+"use client";
 import Navbar from "@/components/navbar";
-import { getAyat } from "@/components/function/useFetchData";
+import { getAlQuran } from "@/components/function/useFetchAlQuran";
 import Deskripsi from "@/components/ayat/deskripsi";
 import NextPrevSurah from "@/components/function/NextPrevSurah";
 import Ayats from "@/components/ayat/ayats";
 import localFont from "next/font/local";
-
 interface type {
   id: number;
 }
+
 const myFont = localFont({ src: "../../../public/font/LPMQ.ttf" });
-export default async function Ayat(props: type) {
-  const res = await getAyat(props.id);
-  const surah = res.data;
+export default function Ayat(props: type) {
+  const { data, isLoading } = getAlQuran(
+    `https://equran.id/api/v2/surat/${props.id}`
+  );
+
+  if (isLoading) return <h1 className="text-center">Tunggu Data</h1>;
+  const surah = data.data;
   const selanjutnya = surah.suratSelanjutnya;
   const sebelumnya = surah.suratSebelumnya;
   return (

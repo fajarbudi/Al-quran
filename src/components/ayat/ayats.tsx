@@ -1,4 +1,3 @@
-"use client";
 import Tafsir from "./tafsir";
 import { simpan, lanjutkan } from "@/components/function/useAlert";
 import localFont from "next/font/local";
@@ -19,7 +18,6 @@ export default function ayats(props: any) {
   const ayat = surah.ayat;
   const [url, setUrl]: any = useState("");
   const router = useRouter();
-
   useEffect(() => {
     if (!url.noAyat) {
       const Url = JSON.parse(localStorage.getItem("url") || "[]");
