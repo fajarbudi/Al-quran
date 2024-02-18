@@ -62,13 +62,13 @@ export default function Surah(props: { url: string }) {
             disabled={page <= 0 ? true : false}
             onClick={() => setPage(page - 24)}
             className="bg-[#0593E8] px-4 py-2 rounded-lg
-             shadow-claymorpishm2 text-white mx-8">
+             shadow-claymorpishm2 text-white mx-5 lg:mx-16">
             {"<<"} sebelumnya
           </button>
           <button
             disabled={page >= 90 ? true : false}
             onClick={() => setPage(page + 24)}
-            className="bg-[#0593E8] px-4 py-2 rounded-lg shadow-claymorpishm2 text-white mx-8">
+            className="bg-[#0593E8] px-4 py-2 rounded-lg shadow-claymorpishm2 text-white mx-5 lg:mx-16">
             selanjutnya {">>"}
           </button>
         </div>
