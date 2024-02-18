@@ -9,7 +9,8 @@ export default async function Home() {
   const url = `${process.env.BASE_URL}`;
   return (
     <main>
-      <Surah url={url} />
+      {/* <Surah url={url} /> */}
+      <h1>cobaa</h1>
     </main>
   );
 }
