@@ -1,15 +1,13 @@
+"use client";
 import localFont from "next/font/local";
-import { headers } from "next/headers";
-import { getDzikir } from "@/components/function/useFetchData";
+import { getData } from "@/components/function/useFetchData";
 const myFont = localFont({ src: "../../../public/font/LPMQ.ttf" });
 
-export default async function dzikir() {
-  // const { data, isLoading } = getDzikir();
-  // if (isLoading)
-  //   return <h1 className="text-center text-2xl mt-4">Tunggu Data......</h1>;
-  // const dzikirs = data;
-  const host = headers().get("host");
-  const dzikirs = await getDzikir(host);
+export default function dzikir() {
+  const { data, isLoading } = getData("/data/dzikir");
+  if (isLoading)
+    return <h1 className="text-center text-2xl mt-4">Tunggu Data......</h1>;
+  const dzikirs = data;
 
   interface type {
     arab: string;

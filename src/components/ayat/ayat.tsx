@@ -1,21 +1,24 @@
 "use client";
 import Navbar from "@/components/navbar";
-import { getAlQuran } from "@/components/function/useFetchAlQuran";
+import { getData } from "@/components/function/useFetchData";
 import Deskripsi from "@/components/ayat/deskripsi";
 import NextPrevSurah from "@/components/function/NextPrevSurah";
 import Ayats from "@/components/ayat/ayats";
 import localFont from "next/font/local";
+
 interface type {
   id: number;
+  url: string;
 }
 
 const myFont = localFont({ src: "../../../public/font/LPMQ.ttf" });
 export default function Ayat(props: type) {
-  const { data, isLoading } = getAlQuran(
-    `https://equran.id/api/v2/surat/${props.id}`
-  );
+  const { data, isLoading } = getData(`${props.url}/v2/surat/${props.id}`);
 
-  if (isLoading) return <h1 className="text-center">Tunggu Data</h1>;
+  if (isLoading)
+    return (
+      <h1 className="text-center w-screen text-2xl mt-4">Tunggu Data......</h1>
+    );
   const surah = data.data;
   const selanjutnya = surah.suratSelanjutnya;
   const sebelumnya = surah.suratSebelumnya;
@@ -32,7 +35,7 @@ export default function Ayat(props: type) {
 
         <div className="flex justify-center md:justify-around">
           <div>
-            <Ayats array={surah} id={props.id} />
+            <Ayats array={surah} id={props.id} url={props.url} />
             <div className="md:w-7/12 2xl:w-8/12 my-10">
               <NextPrevSurah
                 nextSurah={selanjutnya.namaLatin}

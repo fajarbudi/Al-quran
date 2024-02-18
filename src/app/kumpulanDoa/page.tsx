@@ -9,12 +9,13 @@ export const metadata: Metadata = {
 };
 
 export default function kumpulanDoa() {
+  const url = `${process.env.BASE_URL}`;
   return (
     <>
       <main>
         <Navbar judul="Sayyidul Istighfar" position="sticky top-0" />
         <SayyidulIstighfar />
-        <AlBaqarah />
+        <AlBaqarah url={url} />
       </main>
     </>
   );

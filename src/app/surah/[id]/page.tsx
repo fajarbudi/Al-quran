@@ -7,8 +7,8 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const id = params.id;
-  const data = await fetch(`https://equran.id/api/v2/surat/${id}`).then((res) =>
-    res.json()
+  const data = await fetch(`${process.env.BASE_URL}/v2/surat/${id}`).then(
+    (res) => res.json()
   );
 
   return {
@@ -18,10 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function page({ params }: { params: { id: number } }) {
+  const url = `${process.env.BASE_URL}`;
   return (
     <>
       <main>
-        <Ayat id={params.id} />
+        <Ayat id={params.id} url={url} />
       </main>
     </>
   );

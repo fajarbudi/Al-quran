@@ -1,11 +1,14 @@
-import { headers } from "next/headers";
-import { getSayyidulIstighfar } from "@/components/function/useFetchData";
+"use client";
+import { getData } from "@/components/function/useFetchData";
 import localFont from "next/font/local";
 const myFont = localFont({ src: "../../../public/font/LPMQ.ttf" });
 
-export default async function sayyidulIstighfars() {
-  const host = headers().get("host");
-  const data = await getSayyidulIstighfar(host);
+export default function sayyidulIstighfars() {
+  const { data, isLoading } = getData(`/data/sayyidulIstighfar`);
+  if (isLoading)
+    return (
+      <h1 className="text-center w-screen text-2xl mt-4">Tunggu Data......</h1>
+    );
 
   interface type {
     arab: string;

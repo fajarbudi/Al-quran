@@ -1,7 +1,11 @@
 "use client";
+import { getData } from "@/components/function/useFetchData";
 
-export default async function asmaulHusna(props: any) {
-  const Data = props.data;
+export default function asmaulHusna(props: any) {
+  const { data, isLoading } = getData(props.url);
+  if (isLoading)
+    return <h1 className="text-center text-2xl w-screen">Tunggu Data......</h1>;
+  const datas = data.data;
 
   interface type {
     latin: string;
@@ -19,7 +23,7 @@ export default async function asmaulHusna(props: any) {
     textFull?.classList.toggle("hidden");
     textPreview?.classList.toggle("hidden");
   };
-  return Data.map((asmaulHusna: type, i: number) => (
+  return datas.map((asmaulHusna: type, i: number) => (
     <div
       key={i}
       className="shadow-claymorpishm1 m-2 rounded-xl max-w-lg xl:m-4 h-32 grid content-between">

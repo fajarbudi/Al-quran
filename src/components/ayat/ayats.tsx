@@ -11,6 +11,7 @@ interface type {
   teksLatin: string;
   teksIndonesia: string;
   audio: any;
+  url: string;
 }
 
 export default function ayats(props: any) {
@@ -65,7 +66,11 @@ export default function ayats(props: any) {
           </div>
         </div>
       </div>
-      <Tafsir Nomor={parseInt(surah.nomor)} NomorAyat={ayat.nomorAyat} />
+      <Tafsir
+        Nomor={parseInt(surah.nomor)}
+        NomorAyat={ayat.nomorAyat}
+        url={props.url}
+      />
     </div>
   ));
 }

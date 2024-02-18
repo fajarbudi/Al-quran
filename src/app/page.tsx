@@ -6,9 +6,10 @@ export const metadata: Metadata = {
   description: "Website Al-quran, Dzikir, Kumpulan Doa, Asmaul Husna",
 };
 export default async function Home() {
+  const url = `${process.env.BASE_URL}`;
   return (
     <main>
-      <Surah />
+      <Surah url={url} />
     </main>
   );
 }

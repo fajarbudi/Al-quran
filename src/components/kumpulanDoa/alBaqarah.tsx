@@ -1,11 +1,12 @@
 "use client";
-import { getAlBaqarah } from "@/components/function/useFetchData";
+import { getData } from "@/components/function/useFetchData";
 import localFont from "next/font/local";
 const myFont = localFont({ src: "../../../public/font/LPMQ.ttf" });
 
-export default async function alBaqarah() {
-  const res = await getAlBaqarah();
-  const ayats = res.data.ayat;
+export default function alBaqarah(props: { url: string }) {
+  const { data, isLoading } = getData(`${props.url}/v2/surat/2`);
+  if (isLoading) return "";
+  const ayats = data.data.ayat;
   const ayat = ayats.slice(284, 286);
 
   interface type {

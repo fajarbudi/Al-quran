@@ -1,23 +1,23 @@
 "use client";
 import { useState } from "react";
-import useSWR from "swr";
+import { getTafsir } from "@/components/function/useFetchData";
 
 interface type {
   NomorAyat: number;
   Nomor: number;
+  url: string;
 }
 
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
 export default function tafsir(props: type) {
   const [isHidden, setIsHidden] = useState("hidden");
 
   const hasil = () => {
-    const { data, isLoading } = useSWR(
-      `https://equran.id/api/v2/tafsir/${props.Nomor}`,
-      fetcher
+    const { data, isLoading } = getTafsir(
+      `${props.url}/v2/tafsir/${props.Nomor}`
     );
 
     if (isLoading) return <h1>Tunggu Data</h1>;
+
     const tafsir = data.data.tafsir[props.NomorAyat - 1];
     return <h1>{tafsir.teks}</h1>;
   };
