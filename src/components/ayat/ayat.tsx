@@ -35,16 +35,9 @@ export default function Ayat(props: type) {
 
         <div className="flex justify-center md:justify-around">
           <div>
-            <Ayats array={surah} id={props.id} url={props.url} />
+            <Ayats array={surah} id={props.id} Url={props.url} />
             <div className="md:w-7/12 2xl:w-8/12 my-10">
-              <NextPrevSurah
-                nextSurah={selanjutnya.namaLatin}
-                nextAyat={selanjutnya.jumlahAyat}
-                nextNomor={selanjutnya.nomor}
-                prevSurah={sebelumnya.namaLatin}
-                prevAyat={sebelumnya.jumlahAyat}
-                prevNomor={sebelumnya.nomor}
-              />
+              <NextPrevSurah next={selanjutnya} prev={sebelumnya} />
             </div>
           </div>
           <div className={`${props.id == 1 ? "mt-20" : ""}`}>

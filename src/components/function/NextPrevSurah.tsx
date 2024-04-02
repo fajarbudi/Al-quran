@@ -1,42 +1,48 @@
 import Link from "next/link";
+
 interface type {
-  nextSurah: string;
-  nextAyat: number;
-  nextNomor: number;
-  prevSurah: string;
-  prevAyat: number;
-  prevNomor: number;
+  next: {
+    nomor: number;
+    namaLatin: string;
+    jumlahAyat: number;
+  };
+  prev: {
+    nomor: number;
+    namaLatin: string;
+    jumlahAyat: number;
+  };
 }
-export default function selanjutnya(props: type) {
+
+export default function selanjutnya({ next, prev }: type) {
   return (
     <>
       <div
         className={`text-white flex ${
-          !props.prevSurah || !props.nextSurah
+          !prev.namaLatin || !next.namaLatin
             ? "justify-center"
             : "justify-evenly"
         }`}>
-        <Link href={`/surah/${props.prevNomor}`}>
+        <Link href={`/surah/${prev.nomor}`}>
           <div
             className={`bg-[#0593E8] px-4 py-2 rounded-xl shadow-claymorpishm2 ${
-              !props.prevSurah ? "hidden" : "block"
+              !prev.nomor ? "hidden" : "block"
             }`}>
             <p>Sebelumnya</p>
             <div className="flex flex-row gap-2">
-              <p>{props.prevSurah} - </p>
-              <p>{props.prevAyat}</p>
+              <p>{prev.namaLatin} - </p>
+              <p>{prev.jumlahAyat}</p>
             </div>
           </div>
         </Link>
-        <Link href={`/surah/${props.nextNomor}`}>
+        <Link href={`/surah/${next.nomor}`}>
           <div
             className={`bg-[#0593E8] px-4 py-2 rounded-xl shadow-claymorpishm2 ${
-              !props.nextSurah ? "hidden" : "block"
+              !next.nomor ? "hidden" : "block"
             }`}>
             <p className="text-center">Selanjutnya</p>
             <div className="flex flex-row gap-2">
-              <p>{props.nextSurah} - </p>
-              <p>{props.nextAyat}</p>
+              <p>{next.namaLatin} - </p>
+              <p>{next.jumlahAyat}</p>
             </div>
           </div>
         </Link>

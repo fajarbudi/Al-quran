@@ -1,19 +1,20 @@
 "use client";
 import { getData } from "@/components/function/useFetchData";
 
-export default function asmaulHusna(props: any) {
-  const { data, isLoading } = getData(props.url);
+interface type {
+  latin: string;
+  arti: string;
+  arab: string;
+}
+
+export default function asmaulHusna({ url }: { url: string }) {
+  const { data, isLoading } = getData(url);
   if (isLoading)
     return <h1 className="text-center text-2xl w-screen">Tunggu Data......</h1>;
   const datas = data.data;
 
-  interface type {
-    latin: string;
-    arti: string;
-    arab: string;
-  }
-  const coba = (id: any) => {
-    const text = document.getElementById(id);
+  const coba = (id: number) => {
+    const text = document.getElementById(`${id}`);
     const textFull = document.getElementById(`full${id}`);
     const textPreview = document.getElementById(`preview${id}`);
 

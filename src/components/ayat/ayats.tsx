@@ -11,12 +11,20 @@ interface type {
   teksLatin: string;
   teksIndonesia: string;
   audio: any;
-  url: string;
 }
 
-export default function ayats(props: any) {
-  const surah = props.array;
-  const ayat = surah.ayat;
+interface props {
+  array: {
+    nomor: string;
+    namaLatin: string;
+    ayat: Array<type>;
+  };
+  id: number;
+  Url: string;
+}
+
+export default function ayats({ array, id, Url }: props) {
+  const ayat = array.ayat;
   const [url, setUrl]: any = useState("");
   const router = useRouter();
   useEffect(() => {
@@ -26,9 +34,9 @@ export default function ayats(props: any) {
     } else {
       lanjutkan(url, router);
     }
-  });
+  }, []);
 
-  return ayat.map((ayat: type, i: number) => (
+  return ayat.map((ayat, i: number) => (
     <div
       id={`${ayat.nomorAyat}`}
       data-aos="fade-up"
@@ -38,11 +46,7 @@ export default function ayats(props: any) {
       className=" cursor-pointer my-10 mx-4 py-6 px-4 rounded-xl md:w-7/12 2xl:w-8/12 md:m-10 shadow-claymorpishm1 hover:shadow-claymorpishm3 relative">
       <div
         onClick={() => {
-          simpan(
-            props.id.toString(),
-            ayat.nomorAyat.toString(),
-            surah.namaLatin
-          );
+          simpan(id.toString(), ayat.nomorAyat.toString(), array.namaLatin);
         }}>
         <p className="h-10 text-[#3da9fc] absolute top-4">
           ( {ayat.nomorAyat}. )
@@ -67,9 +71,9 @@ export default function ayats(props: any) {
         </div>
       </div>
       <Tafsir
-        Nomor={parseInt(surah.nomor)}
+        Nomor={parseInt(array.nomor)}
         NomorAyat={ayat.nomorAyat}
-        url={props.url}
+        url={Url}
       />
     </div>
   ));
