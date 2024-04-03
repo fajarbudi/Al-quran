@@ -11,8 +11,10 @@ export default function navbar(props: type) {
   const [navbarOpen, setNavbarOpen] = useState(false);
   useEffect(() => {
     const Url = JSON.parse(localStorage.getItem("url") || "[]");
-    setUrl(Url);
-  }, []);
+    setTimeout(() => {
+      setUrl(Url);
+    }, 500);
+  });
 
   return (
     <>

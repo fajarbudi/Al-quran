@@ -1,7 +1,7 @@
 import Tafsir from "./tafsir";
 import { simpan, lanjutkan } from "@/components/function/useAlert";
 import localFont from "next/font/local";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 const myFont = localFont({ src: "../../../public/font/LPMQ.ttf" });
@@ -25,16 +25,13 @@ interface props {
 
 export default function ayats({ array, id, Url }: props) {
   const ayat = array.ayat;
-  const [url, setUrl]: any = useState("");
   const router = useRouter();
   useEffect(() => {
-    if (!url.noAyat) {
-      const Url = JSON.parse(localStorage.getItem("url") || "[]");
-      setUrl(Url);
-    } else {
-      lanjutkan(url, router);
+    const Url = JSON.parse(localStorage.getItem("url") || "[]");
+    if (Url.noAyat) {
+      lanjutkan(Url, router);
     }
-  }, []);
+  });
 
   return ayat.map((ayat, i: number) => (
     <div
@@ -53,7 +50,7 @@ export default function ayats({ array, id, Url }: props) {
         </p>
         <p
           style={{ lineHeight: "250%", wordSpacing: "3px" }}
-          className={` text-3xl lg:text-4xl text-end antialiased text-[#094067] ${myFont.className}`}>
+          className={`mt-2 text-3xl lg:text-4xl text-end antialiased text-[#094067] ${myFont.className}`}>
           {`${ayat.teksArab}`}
         </p>
         <div className="md:flex flex-row justify-between">

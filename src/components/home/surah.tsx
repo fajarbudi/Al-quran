@@ -80,7 +80,7 @@ export default function Surah(props: { url: string }) {
     <>
       <div>
         <Navbar judul="Al-Quran" position="sticky top-0" />
-        <div>{surah()}</div>
+        <div className="md:mt-10">{surah()}</div>
       </div>
     </>
   );
