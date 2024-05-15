@@ -25,7 +25,11 @@ export default function Ayat(props: type) {
   return (
     <>
       <div>
-        <Navbar judul={surah.namaLatin} position="sticky top-0" />
+        <Navbar
+          judul={surah.namaLatin}
+          ayat={surah.jumlahAyat}
+          position="sticky top-0"
+        />
         <h1
           className={`text-4xl md:text-6xl text-center pt-6 px-4 md:px-6  text-[#094067] ${myFont.className}`}>
           {props.id == 1

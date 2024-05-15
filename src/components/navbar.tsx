@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 interface type {
   judul: string;
+  ayat?: string;
   position?: string;
 }
 export default function navbar(props: type) {
@@ -83,8 +84,15 @@ export default function navbar(props: type) {
             data-aos="fade-down"
             data-aos-delay="1500"
             data-aos-anchor-placement="center-bottom"
-            className="py-4 lg:-ms-72 absolute top-1 left-16 lg:static">
-            <h1 className="text-base md:text-2xl">{props.judul}</h1>
+            className="pt-2 lg:-ms-72 absolute top-1 left-16 lg:static">
+            {props.ayat ? (
+              <div>
+                <h1 className="text-center md:text-lg">{props.judul}</h1>
+                <p className="text-center md:text-lg">{props.ayat} Ayat</p>
+              </div>
+            ) : (
+              <h1 className="mt-2 text-base md:text-2xl">{props.judul}</h1>
+            )}
           </div>
 
           <Link
