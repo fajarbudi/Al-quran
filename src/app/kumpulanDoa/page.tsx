@@ -8,14 +8,18 @@ export const metadata: Metadata = {
   description: "Kumpulan Doa dengan arti bahasa Indonesia",
 };
 
-export default function kumpulanDoa() {
+export default async function kumpulanDoa() {
   const url = `${process.env.BASE_URL}`;
+
+  const res = await fetch(`${url}/v2/surat/2`, { mode: "no-cors" });
+  const data = await res.json();
+  const datas = data.data;
   return (
     <>
       <main>
         <Navbar judul="Sayyidul Istighfar" position="sticky top-0" />
         <SayyidulIstighfar />
-        <AlBaqarah url={url} />
+        <AlBaqarah data={datas} />
       </main>
     </>
   );

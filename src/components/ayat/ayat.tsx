@@ -9,17 +9,18 @@ import localFont from "next/font/local";
 interface type {
   id: number;
   url: string;
+  data: any;
 }
 
 const myFont = localFont({ src: "../../../public/font/LPMQ.ttf" });
 export default function Ayat(props: type) {
-  const { data, isLoading } = getData(`${props.url}/v2/surat/${props.id}`);
+  // const { data, isLoading } = getData(`${props.url}/v2/surat/${props.id}`);
 
-  if (isLoading)
-    return (
-      <h1 className="text-center w-screen text-2xl mt-4">Tunggu Data......</h1>
-    );
-  const surah = data.data;
+  // if (isLoading)
+  //   return (
+  //     <h1 className="text-center w-screen text-2xl mt-4">Tunggu Data......</h1>
+  //   );
+  const surah = props.data;
   const selanjutnya = surah.suratSelanjutnya;
   const sebelumnya = surah.suratSebelumnya;
   return (

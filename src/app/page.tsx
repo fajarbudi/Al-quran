@@ -7,9 +7,13 @@ export const metadata: Metadata = {
 };
 export default async function Home() {
   const url = `${process.env.BASE_URL}`;
+
+  const res = await fetch(`${url}/v2/surat`, { mode: "no-cors" });
+  const data = await res.json();
+  const datas = data.data;
   return (
     <main>
-      <Surah url={url} />
+      <Surah url={url} datas={datas} />
     </main>
   );
 }
