@@ -11,21 +11,21 @@ interface type {
 export default function tafsir(props: type) {
   const [isHidden, setIsHidden] = useState("hidden");
 
-  // const hasil = () => {
-  //   const { data, isLoading } = getTafsir(
-  //     `${props.url}/v2/tafsir/${props.Nomor}`
-  //   );
+  const hasil = () => {
+    const { data, isLoading } = getTafsir(
+      `${props.url}/v2/tafsir/${props.Nomor}`
+    );
 
-  //   if (isLoading) return <h1>Tunggu Data</h1>;
+    if (isLoading) return <h1>Tunggu Data</h1>;
 
-  //   const tafsir = data.data.tafsir[props.NomorAyat - 1];
-  //   return <h1>{tafsir.teks}</h1>;
-  // };
+    const tafsir = data.data.tafsir[props.NomorAyat - 1];
+    return <h1>{tafsir.teks}</h1>;
+  };
 
   return (
     <>
       <div className=" border-t-2 mt-4 pt-4 indent-4 relative">
-        {/* <div className={`${isHidden} pb-4 mb-4  border-b-2`}>{hasil()}</div> */}
+        <div className={`${isHidden} pb-4 mb-4  border-b-2`}>{hasil()}</div>
         <button
           data-aos-delay="600"
           data-aos="zoom-in"

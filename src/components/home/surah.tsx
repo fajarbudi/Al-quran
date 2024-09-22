@@ -4,22 +4,20 @@ import { getData } from "@/components/function/useFetchData";
 import { useState } from "react";
 import Navbar from "@/components/navbar";
 
-export default function Surah(props: { url: string; datas: any }) {
+export default function Surah(props: { url: string }) {
   const [page, setPage] = useState(0);
   let maxSurah = page + 24;
   const surah = () => {
-    // const { data, isLoading } = getData(`${props.url}/v2/surat`);
-    // if (isLoading)
-    //   return (
-    //     <h1 className="text-center w-screen text-2xl mt-4">
-    //       Tunggu Data......
-    //     </h1>
-    //   );
+    const { data, isLoading } = getData(`${props.url}/v2/surat`);
+    if (isLoading)
+      return (
+        <h1 className="text-center w-screen text-2xl mt-4">
+          Tunggu Data......
+        </h1>
+      );
 
-    // const res = data.data;
-    // const datas = res.slice(page, maxSurah);
-
-    const datas = props.datas;
+    const res = data.data;
+    const datas = res.slice(page, maxSurah);
 
     return (
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 dekstop:grid-cols-6 mt-4">
