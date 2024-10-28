@@ -30,11 +30,11 @@ export default function dzikir() {
                 dangerouslySetInnerHTML={{ __html: `${dzikir.arab}` }}
               />
             </div>
-            <p className="border-b-2 pb-2">
+            <p className="border-b-2 pb-2 text-sm lg:text-base">
               {dzikir.latin}
               <span className="ml-2 font-bold">( {`${dzikir.dibaca}`} )</span>
             </p>
-            <p className="pt-2">
+            <p className="pt-2 text-sm lg:text-base">
               <b>Artinya: </b> {dzikir.arti}
             </p>
           </div>

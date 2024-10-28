@@ -23,12 +23,12 @@ export default function deskripsi(props: type) {
             isHidden ? "-mr-coba" : ""
           } transition-all duration-500 md:mr-px`}>
           <div className=" w-80 p-4 rounded-xl -my-16 mx-8 md:my-12 md:w-64 xl:w-96 2xl:h-auto bg-white shadow-claymorpishm1">
-            <div className="text-center text-white text-xl bg-[#0593E8] absolute -top-20 md:top-6 py-2 px-10 rounded-xl shadow-claymorpishm2">
+            <div className="text-center text-white text-xl bg-[#0593E8] absolute -top-20 md:top-6 py-2 px-10 rounded-xl shadow-claymorpishm2 text-sm lg:text-base">
               Deskripsi
             </div>
             <div
               style={{ height: "600px" }}
-              className="overflow-scroll indent-4 pt-4 pr-4">
+              className="overflow-scroll indent-4 pt-4 pr-4 text-sm lg:text-base">
               <h1 className="text-center text-2xl text-[#094067] mb-2 pb-2 border-b-2">
                 {props.surah}
               </h1>

@@ -55,8 +55,8 @@ export default function ayats({ array, id, Url }: props) {
         </p>
         <div className="md:flex flex-row justify-between">
           <div className="mr-4">
-            <p className="my-2">{ayat.teksLatin}</p>
-            <p>{ayat.teksIndonesia}</p>
+            <p className="my-2 text-sm lg:text-base">{ayat.teksLatin}</p>
+            <p className="text-sm lg:text-base">{ayat.teksIndonesia}</p>
           </div>
           <div>
             <audio

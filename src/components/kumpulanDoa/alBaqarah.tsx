@@ -20,11 +20,11 @@ export default function alBaqarah(props: { url: String }) {
       <section className="flex justify-center mt-6">
         <div className="shadow-claymorpishm1 rounded-xl p-6 w-11/12 xl:w-9/12 my-4 relative pt-10">
           <div className="flex justify-center mb-6 absolute -top-5">
-            <h1 className="text-center text-white text-xl  bg-[#3da9fc] shadow-claymorpishm2 rounded-xl py-2 w-56">
+            <h1 className="text-center text-white lg:text-xl  bg-[#3da9fc] shadow-claymorpishm2 rounded-xl py-2 w-56 text-base">
               Al Baqarah 285 - 286
             </h1>
           </div>
-          <p className="text-center mb-4 pb-4">
+          <p className="text-center mb-4 pb-4 text-sm lg:text-base">
             Siapa yang membaca dua ayat terakhir dari surat Al-Baqarah pada
             malam hari, maka ia akan diberi kecukupan.
             <br />
@@ -42,7 +42,7 @@ export default function alBaqarah(props: { url: String }) {
                   {ayat.teksArab}
                 </h1>
               </div>
-              <p>{ayat.teksLatin}</p>
+              <p className="text-sm lg:text-base">{ayat.teksLatin}</p>
             </div>
           ))}
         </div>

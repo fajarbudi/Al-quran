@@ -31,7 +31,7 @@ export default function Ayat(props: type) {
           position="sticky top-0"
         />
         <h1
-          className={`text-4xl md:text-6xl text-center pt-6 px-4 md:px-6  text-[#094067] ${myFont.className}`}>
+          className={`text-2xl md:text-6xl text-center pt-6 px-4 md:px-6  text-[#094067] ${myFont.className}`}>
           {props.id == 1
             ? ""
             : " بِسْــــــــــــــــــمِ اللّٰهِ الرَّحْمَنِ الرَّحِيْمِ"}

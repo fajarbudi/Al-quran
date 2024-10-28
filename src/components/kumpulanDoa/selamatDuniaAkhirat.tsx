@@ -20,7 +20,7 @@ export default function selamatDuniaAkhirat() {
       <section className="flex justify-center mt-6">
         <div className="shadow-claymorpishm1 rounded-xl p-4 w-11/12 xl:w-9/12 my-4 relative pt-10">
           <div className="flex justify-center mb-6 absolute -top-5">
-            <h1 className="text-center text-white text-xl  bg-[#3da9fc] shadow-claymorpishm2 rounded-xl py-2 px-4">
+            <h1 className="text-center text-white lg:text-xl text-base  bg-[#3da9fc] shadow-claymorpishm2 rounded-xl py-2 px-4">
               Selamat Dunia Akhirat
             </h1>
           </div>
@@ -32,8 +32,10 @@ export default function selamatDuniaAkhirat() {
                 className={`text-2xl lg:text-4xl text-end text-[#094067] ${myFont.className}`}>
                 {selamatDuniaAkhirat.arab}
               </h1>
-              <p>{selamatDuniaAkhirat.latin}</p>
-              <p>
+              <p className="text-sm lg:text-base">
+                {selamatDuniaAkhirat.latin}
+              </p>
+              <p className="text-sm lg:text-base">
                 <b>Artinya :</b> {selamatDuniaAkhirat.arti}
               </p>
             </div>
