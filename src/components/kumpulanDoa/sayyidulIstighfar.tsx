@@ -29,7 +29,7 @@ export default function sayyidulIstighfars() {
               <p className="text-[#3da9fc] absolute top-0">( {i + 1}. )</p>
               <h1
                 style={{ lineHeight: "250%", wordSpacing: "3px" }}
-                className={`text-3xl lg:text-4xl text-end text-[#094067] ${myFont.className}`}>
+                className={`text-2xl lg:text-4xl text-end text-[#094067] ${myFont.className}`}>
                 {SayyidulIstighfar.arab}
               </h1>
               <p>{SayyidulIstighfar.latin}</p>

@@ -26,7 +26,7 @@ export default function dzikir() {
             <div>
               <h1
                 style={{ lineHeight: "250%", wordSpacing: "3px" }}
-                className={` text-3xl lg:text-4xl text-[#094067] pb-2 text-end ${myFont.className}`}
+                className={` text-2xl lg:text-4xl text-[#094067] pb-2 text-end ${myFont.className}`}
                 dangerouslySetInnerHTML={{ __html: `${dzikir.arab}` }}
               />
             </div>

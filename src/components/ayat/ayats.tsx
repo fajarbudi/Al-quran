@@ -50,7 +50,7 @@ export default function ayats({ array, id, Url }: props) {
         </p>
         <p
           style={{ lineHeight: "250%", wordSpacing: "3px" }}
-          className={`mt-2 text-3xl lg:text-4xl text-end antialiased text-[#094067] ${myFont.className}`}>
+          className={`mt-2 text-2xl lg:text-4xl text-end antialiased text-[#094067] ${myFont.className}`}>
           {`${ayat.teksArab}`}
         </p>
         <div className="md:flex flex-row justify-between">

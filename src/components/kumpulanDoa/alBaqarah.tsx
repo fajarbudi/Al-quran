@@ -38,7 +38,7 @@ export default function alBaqarah(props: { url: String }) {
               <div className="flex flex-row justify-between mb-8 pt-4">
                 <h1
                   style={{ lineHeight: "250%", wordSpacing: "3px" }}
-                  className={`text-3xl lg:text-4xl text-end text-[#094067] ${myFont.className}`}>
+                  className={`text-2xl lg:text-4xl text-end text-[#094067] ${myFont.className}`}>
                   {ayat.teksArab}
                 </h1>
               </div>
